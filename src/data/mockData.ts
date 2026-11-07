@@ -6,7 +6,7 @@ export const INITIAL_CATEGORIES: Category[] = [
     name: 'Silk Sarees',
     slug: 'silk-sarees',
     subtitle: 'Elegant & Rich',
-    image: '/src/assets/images/product_kanjivaram_red_1791712939874.jpg',
+    image: '/src/assets/images/product_silk_peacock_blue.jpg',
     description: 'Pure Mulberry and Katan silk woven with luminous gold and silver zari.'
   },
   {
@@ -490,32 +490,31 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-12',
-    name: 'Temple Gold Heritage Silk Saree',
-    slug: 'temple-gold-heritage-silk-saree',
+    name: 'Mustard Gold Chanderi Katan Silk Saree',
+    slug: 'mustard-gold-chanderi-katan-silk-saree',
     category: 'Silk Sarees',
-    fabric: 'Pure Mulberry Silk',
-    color: 'Crimson Red',
-    occasion: 'Bridal & Wedding',
-    zariType: 'Heavy Tested Gold Zari',
-    price: 11999,
-    originalPrice: 14500,
-    discountPercent: 17,
-    description: 'A radiant creation in auspicious crimson silk, featuring antique gold electroplated zari motifs along the borders and a majestic grand pallu for timeless ceremonial presence.',
+    fabric: 'Pure Chanderi Katan Silk',
+    color: 'Mustard Yellow',
+    occasion: 'Festive Collections',
+    zariType: 'Fine Tested Silver-Gold Floral Butis',
+    price: 10499,
+    originalPrice: 12500,
+    discountPercent: 16,
+    description: 'Exquisitely hand-spun from pure Katan silk threads, this radiant mustard yellow Chanderi silk saree features delicate silver-gold floral butis scattered gracefully across the body and a refined heritage pallu.',
     details: {
-      weave: 'Traditional Korvai Weave',
+      weave: 'Chanderi Katan Handloom',
       length: '5.5 metres + 0.8 metre blouse piece',
-      blousePiece: 'Contrast brocade blouse included',
-      weight: '890 grams',
-      origin: 'Tamil Nadu',
-      certification: 'Silk Mark Certified Pure Silk'
+      blousePiece: 'Contrast raw silk blouse included',
+      weight: '620 grams',
+      origin: 'Chanderi, Madhya Pradesh',
+      certification: 'Silk Mark Certified 100% Pure Silk'
     },
     careInstructions: [
       'Dry clean exclusively',
       'Store in unbleached muslin wrap'
     ],
     images: [
-      '/src/assets/images/product_kanjivaram_red_1791712939874.jpg',
-      '/src/assets/images/hero_saree_model_1791712828037.jpg'
+      '/src/assets/images/product_silk_mustard_chanderi.jpg'
     ],
     rating: 5.0,
     reviewCount: 31,
@@ -678,12 +677,12 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Silk Sarees',
     fabric: 'Pure Dharmavaram Pattu Silk',
     color: 'Rani Pink',
-    occasion: 'Bridal & Wedding',
+    occasion: 'Festive Collections',
     zariType: 'Broad Woven Gold Zari Temple Border',
     price: 12800,
     originalPrice: 15200,
     discountPercent: 16,
-    description: 'Celebrated for its heavy gold border and rich double-warp pattu weave, this rani pink Dharmavaram silk saree is an iconic bridal favourite. Features sacred temple kalash motifs and an ornate zari pallu that shimmers majestically.',
+    description: 'Celebrated for its heavy gold border and rich double-warp pattu weave, this rani pink Dharmavaram silk saree is an iconic festive heirloom favourite. Features sacred temple kalash motifs and an ornate zari pallu that shimmers majestically.',
     details: {
       weave: 'Dharmavaram Double-Warp Handloom',
       length: '5.5 metres + 0.8 metre blouse piece',
@@ -786,7 +785,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Silk Sarees',
     fabric: 'Pure Katan Silk',
     color: 'Royal Purple',
-    occasion: 'Bridal & Wedding',
+    occasion: 'Festive Collections',
     zariType: 'Antique Gold & Silver Kadwa Zari',
     price: 10500,
     originalPrice: 12999,
@@ -848,6 +847,42 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     stockCount: 9,
     isBestSeller: false,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-22',
+    name: 'Teal Emerald Pure Tussar Silk Saree',
+    slug: 'teal-emerald-pure-tussar-silk-saree',
+    category: 'Silk Sarees',
+    fabric: 'Pure Tussar Wild Silk',
+    color: 'Emerald Green',
+    occasion: 'Ethnic Wear',
+    zariType: 'Handcrafted Kantha Embroidery & Bronze Zari Border',
+    price: 11200,
+    originalPrice: 13500,
+    discountPercent: 17,
+    description: 'Exquisite deep teal emerald green pure Tussar wild silk saree with rich natural slub texture, handcrafted botanical Kantha stitch embroidery, and antique bronze zari border.',
+    details: {
+      weave: 'Tussar Handloom with Hand Kantha Stitch',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Running tussar silk blouse fabric included',
+      weight: '710 grams',
+      origin: 'Bishnupur, West Bengal',
+      certification: 'Silk Mark Certified 100% Pure Silk'
+    },
+    careInstructions: [
+      'Dry Clean exclusively',
+      'Store flat wrapped in soft cotton fabric'
+    ],
+    images: [
+      '/src/assets/images/product_silk_teal_tussar.jpg'
+    ],
+    rating: 5.0,
+    reviewCount: 27,
+    inStock: true,
+    stockCount: 7,
+    isBestSeller: true,
     isFeatured: true,
     isNewArrival: true
   }

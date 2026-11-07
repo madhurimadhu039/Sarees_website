@@ -8,9 +8,13 @@ export const isCategoryMatch = (product: Product, categoryQuery: string): boolea
   if (!categoryQuery || categoryQuery === 'all') return true;
   const target = categoryQuery.toLowerCase().trim();
 
-  // Silk Sarees: ONLY 100% Pure Silk sarees, absolutely NO cotton or georgette
+  // Silk Sarees: ONLY 100% Pure Silk sarees, absolutely NO bridal sarees, NO cotton or georgette
   if (target === 'silk sarees' || target === 'silk-sarees' || target === 'silk') {
     if (
+      product.category.toLowerCase().includes('bridal') ||
+      product.category.toLowerCase().includes('wedding') ||
+      product.occasion.toLowerCase().includes('bridal') ||
+      product.occasion.toLowerCase().includes('wedding') ||
       product.category.toLowerCase().includes('cotton') ||
       product.category.toLowerCase().includes('georgette') ||
       product.fabric.toLowerCase().includes('cotton') ||
@@ -18,11 +22,7 @@ export const isCategoryMatch = (product: Product, categoryQuery: string): boolea
     ) {
       return false;
     }
-    return (
-      product.category.toLowerCase() === 'silk sarees' ||
-      product.category.toLowerCase().includes('silk') ||
-      (product.fabric.toLowerCase().includes('silk') && !product.fabric.toLowerCase().includes('cotton'))
-    );
+    return product.category.toLowerCase() === 'silk sarees';
   }
 
   // Cotton Sarees: ONLY authentic cotton sarees, absolutely NO pure silk or georgette

@@ -150,9 +150,9 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, onSearc
               </button>
 
               {collectionsDropdownOpen && (
-                <div className="absolute top-full left-0 w-72 pt-2 shadow-2xl animate-in fade-in slide-in-from-top-1 z-50">
-                  <div className="bg-[#FAF7F2] border border-[#E8DEC8] rounded-xl shadow-xl p-2.5 divide-y divide-[#EFE5D5]">
-                    <div className="py-1 space-y-0.5">
+                <div className="absolute top-full left-0 w-80 pt-2 shadow-2xl animate-in fade-in slide-in-from-top-1 z-50">
+                  <div className="bg-[#FAF7F2] border border-[#E8DEC8] rounded-xl shadow-xl p-2 divide-y divide-[#EFE5D5]">
+                    <div className="py-1 space-y-1">
                       {categories.map(cat => (
                         <button
                           key={cat.id}
@@ -163,10 +163,25 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, onSearc
                             setCollectionsDropdownOpen(false);
                             onNavigate('shop', cat.name);
                           }}
-                          className="w-full text-left px-3 py-2 text-xs text-[#3B1637] hover:bg-[#F2ECE1] hover:text-[#581C4E] rounded-lg transition-colors flex items-center justify-between group cursor-pointer"
+                          className="w-full text-left px-2.5 py-1.5 text-xs hover:bg-[#F2ECE1] rounded-lg transition-colors flex items-center gap-3 group cursor-pointer"
                         >
-                          <span className="font-semibold group-hover:translate-x-0.5 transition-transform">{cat.name}</span>
-                          <span className="text-[10px] text-[#845377] font-medium">{cat.subtitle}</span>
+                          <img
+                            src={cat.image}
+                            alt={cat.name}
+                            referrerPolicy="no-referrer"
+                            className="w-8 h-8 rounded-full object-cover shrink-0 border border-[#E8DEC8] group-hover:border-[#581C4E] shadow-xs transition-colors"
+                          />
+                          <div className="flex-1 min-w-0">
+                            <div className="font-semibold text-[#3B1637] group-hover:text-[#581C4E] transition-colors truncate">
+                              {cat.name}
+                            </div>
+                            <div className="text-[10px] text-[#845377] truncate">
+                              {cat.subtitle}
+                            </div>
+                          </div>
+                          <span className="text-xs text-[#845377] group-hover:translate-x-0.5 transition-transform opacity-40 group-hover:opacity-100">
+                            ›
+                          </span>
                         </button>
                       ))}
                     </div>
@@ -391,10 +406,18 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, onSearc
                         setMobileMenuOpen(false);
                         onNavigate('shop', cat.name);
                       }}
-                      className="w-full text-left py-1.5 text-sm font-medium text-[#4A3E47] hover:text-[#581C4E] flex items-center justify-between"
+                      className="w-full text-left py-1.5 px-2 text-sm font-medium text-[#4A3E47] hover:text-[#581C4E] hover:bg-[#FAF7F2] rounded-lg flex items-center gap-2.5 transition-colors"
                     >
-                      <span>{cat.name}</span>
-                      <span className="text-[11px] text-[#845377]">{cat.subtitle}</span>
+                      <img
+                        src={cat.image}
+                        alt={cat.name}
+                        referrerPolicy="no-referrer"
+                        className="w-7 h-7 rounded-full object-cover shrink-0 border border-[#E8DEC8]"
+                      />
+                      <div className="flex-1 min-w-0">
+                        <span className="truncate block font-semibold text-xs text-[#3B1637]">{cat.name}</span>
+                        <span className="text-[10px] text-[#845377] block">{cat.subtitle}</span>
+                      </div>
                     </button>
                   ))}
                   <button
