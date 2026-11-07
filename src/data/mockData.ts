@@ -418,17 +418,17 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-10',
-    name: 'Chanderi Handloom Festive Cotton Saree',
-    slug: 'chanderi-handloom-festive-cotton-saree',
+    name: 'Sage Green Chanderi Handloom Cotton Saree',
+    slug: 'sage-green-chanderi-handloom-cotton-saree',
     category: 'Cotton Sarees',
     fabric: 'Pure Chanderi Cotton',
-    color: 'Slate Blue',
+    color: 'Sage Green',
     occasion: 'Festive Collections',
     zariType: 'Woven Silver Temple Border',
     price: 3400,
     originalPrice: 4200,
     discountPercent: 19,
-    description: 'Breezy luxury crafted for sunny celebrations and daytime functions. Features subtle butis across the body and a finely woven zari border on lightweight hand-spun cotton.',
+    description: 'Breezy luxury crafted for sunny celebrations and daytime functions. Features subtle botanical butis across a refreshing pastel sage green body and a finely woven zari border on lightweight hand-spun cotton.',
     details: {
       weave: 'Chanderi Handloom',
       length: '5.5 metres + 0.8 metre blouse piece',
@@ -442,15 +442,14 @@ export const INITIAL_PRODUCTS: Product[] = [
       'Medium heat iron'
     ],
     images: [
-      '/src/assets/images/product_cotton_blue_1791712928505.jpg',
-      '/src/assets/images/banner_handloom_cream_1791712842478.jpg'
+      '/src/assets/images/product_cotton_green_chanderi.jpg'
     ],
-    rating: 4.7,
-    reviewCount: 14,
+    rating: 4.8,
+    reviewCount: 17,
     inStock: true,
     stockCount: 11,
     isBestSeller: false,
-    isFeatured: false,
+    isFeatured: true,
     isNewArrival: true
   },
   {
@@ -522,6 +521,115 @@ export const INITIAL_PRODUCTS: Product[] = [
     reviewCount: 31,
     inStock: true,
     stockCount: 6,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-13',
+    name: 'Mustard Bengal Tant Handloom Cotton Saree',
+    slug: 'mustard-bengal-tant-handloom-cotton-saree',
+    category: 'Cotton Sarees',
+    fabric: 'Bengal Tant Handloom Cotton',
+    color: 'Mustard Yellow',
+    occasion: 'Ethnic Wear',
+    zariType: 'Woven Maroon Paisley Border',
+    price: 2499,
+    originalPrice: 3200,
+    discountPercent: 22,
+    description: 'Authentic Bengal Tant handloom saree in radiant mustard turmeric yellow, framed with an intricate maroon and golden woven temple border. Renowned for its crisp, airy weave that keeps you comfortable in warm weather.',
+    details: {
+      weave: 'Bengal Tant Handloom',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Matching unstitched cotton blouse piece included',
+      weight: '390 grams',
+      origin: 'Phulia, West Bengal',
+      certification: 'Handloom Mark India'
+    },
+    careInstructions: [
+      'Cold gentle hand wash',
+      'Light starch for structured drape',
+      'Medium heat iron'
+    ],
+    images: [
+      '/src/assets/images/product_cotton_yellow_tant.jpg'
+    ],
+    rating: 4.8,
+    reviewCount: 26,
+    inStock: true,
+    stockCount: 14,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-14',
+    name: 'Terracotta Maheshwari Handloom Cotton Saree',
+    slug: 'terracotta-maheshwari-handloom-cotton-saree',
+    category: 'Cotton Sarees',
+    fabric: 'Maheshwari Cotton Silk',
+    color: 'Terracotta Rust',
+    occasion: 'Festive Collections',
+    zariType: 'Golden Zari Bugdi Border',
+    price: 3899,
+    originalPrice: 4700,
+    discountPercent: 17,
+    description: 'Handcrafted by master artisans in Maheshwar, this earthy terracotta rust cotton saree features distinctive reversible borders in delicate golden zari and a finely striped linear pallu.',
+    details: {
+      weave: 'Maheshwari Handloom',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Contrasting cotton-silk blouse piece',
+      weight: '450 grams',
+      origin: 'Maheshwar, Madhya Pradesh',
+      certification: 'GI Tagged & Handloom Mark Certified'
+    },
+    careInstructions: [
+      'Dry clean or gentle hand wash',
+      'Iron on low-to-medium heat'
+    ],
+    images: [
+      '/src/assets/images/product_cotton_rust_maheshwari.jpg'
+    ],
+    rating: 4.9,
+    reviewCount: 19,
+    inStock: true,
+    stockCount: 8,
+    isBestSeller: false,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-15',
+    name: 'Blush Pink Jamdani Fine Cotton Saree',
+    slug: 'blush-pink-jamdani-fine-cotton-saree',
+    category: 'Cotton Sarees',
+    fabric: 'Handwoven Jamdani Muslin Cotton',
+    color: 'Blush Pink',
+    occasion: 'Party Wear',
+    zariType: 'Delicate Floating Floral Threadwork',
+    price: 4299,
+    originalPrice: 5400,
+    discountPercent: 20,
+    description: 'An heirloom piece of sheer grace, this dusty blush rose Jamdani saree features delicate woven floral motifs floating seamlessly across breathable fine muslin cotton.',
+    details: {
+      weave: 'Jamdani Supplementary Weft Handloom',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Fine muslin cotton blouse included',
+      weight: '380 grams',
+      origin: 'Bengal',
+      certification: 'Handloom Mark India'
+    },
+    careInstructions: [
+      'Dry clean recommended',
+      'Store wrapped in soft cotton fabric'
+    ],
+    images: [
+      '/src/assets/images/product_cotton_pink_jamdani.jpg'
+    ],
+    rating: 5.0,
+    reviewCount: 35,
+    inStock: true,
+    stockCount: 10,
     isBestSeller: true,
     isFeatured: true,
     isNewArrival: true
