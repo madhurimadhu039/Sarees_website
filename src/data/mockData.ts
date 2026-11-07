@@ -633,6 +633,223 @@ export const INITIAL_PRODUCTS: Product[] = [
     isBestSeller: true,
     isFeatured: true,
     isNewArrival: true
+  },
+  {
+    id: 'prod-16',
+    name: 'Royal Peacock Blue Mysore Crepe Silk Saree',
+    slug: 'royal-peacock-blue-mysore-crepe-silk-saree',
+    category: 'Silk Sarees',
+    fabric: 'Pure Mysore Crepe Silk',
+    color: 'Peacock Blue',
+    occasion: 'Festive Collections',
+    zariType: 'Fine Electroplated Gold Zari Border',
+    price: 9499,
+    originalPrice: 11500,
+    discountPercent: 17,
+    description: 'Crafted from pure mulberry silk filaments with high-twist crepe yarn, this royal peacock blue Mysore silk saree radiates unmatched luster and a butter-soft drape. Features an authentic golden zari border and traditional floral motifs along the grand pallu.',
+    details: {
+      weave: 'Mysore Silk Weave',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Matching pure crepe silk blouse included',
+      weight: '540 grams',
+      origin: 'Mysuru, Karnataka',
+      certification: 'Silk Mark Certified 100% Pure Silk & GI Tagged'
+    },
+    careInstructions: [
+      'Strictly Dry Clean only',
+      'Wrap in soft muslin cloth',
+      'Iron on low heat setting'
+    ],
+    images: [
+      '/src/assets/images/product_silk_peacock_blue.jpg'
+    ],
+    rating: 5.0,
+    reviewCount: 39,
+    inStock: true,
+    stockCount: 8,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-17',
+    name: 'Radiant Rani Pink Dharmavaram Pure Silk Saree',
+    slug: 'radiant-rani-pink-dharmavaram-pure-silk-saree',
+    category: 'Silk Sarees',
+    fabric: 'Pure Dharmavaram Pattu Silk',
+    color: 'Rani Pink',
+    occasion: 'Bridal & Wedding',
+    zariType: 'Broad Woven Gold Zari Temple Border',
+    price: 12800,
+    originalPrice: 15200,
+    discountPercent: 16,
+    description: 'Celebrated for its heavy gold border and rich double-warp pattu weave, this rani pink Dharmavaram silk saree is an iconic bridal favourite. Features sacred temple kalash motifs and an ornate zari pallu that shimmers majestically.',
+    details: {
+      weave: 'Dharmavaram Double-Warp Handloom',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Heavy gold brocade blouse piece included',
+      weight: '880 grams',
+      origin: 'Dharmavaram, Andhra Pradesh',
+      certification: 'Silk Mark Certified 100% Pure Silk'
+    },
+    careInstructions: [
+      'Strictly Dry Clean only',
+      'Store flat wrapped in unbleached muslin'
+    ],
+    images: [
+      '/src/assets/images/product_silk_rani_pink.jpg'
+    ],
+    rating: 4.9,
+    reviewCount: 44,
+    inStock: true,
+    stockCount: 6,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-18',
+    name: 'Wine Maroon Paithani Heritage Pure Silk Saree',
+    slug: 'wine-maroon-paithani-heritage-pure-silk-saree',
+    category: 'Silk Sarees',
+    fabric: 'Pure Paithani Silk',
+    color: 'Wine Maroon',
+    occasion: 'Festive Collections',
+    zariType: 'Solid Gold Tissue Pallu with Mor (Peacock) Motifs',
+    price: 15999,
+    originalPrice: 18999,
+    discountPercent: 16,
+    description: 'Known as the Queen of Silks in Maharashtra, this wine maroon Paithani saree is handwoven using fine silk threads and solid gold tissue. Showcases the legendary kaleidoscopic peacock (mor) and parrot tapestry weave across the pallu.',
+    details: {
+      weave: 'Traditional Tapestry Handloom Weave',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Plain wine silk blouse with matching border',
+      weight: '920 grams',
+      origin: 'Paithan, Maharashtra',
+      certification: 'Silk Mark Certified Pure Silk & GI Tagged'
+    },
+    careInstructions: [
+      'Dry Clean exclusively',
+      'Refold every 3 months along different crease lines'
+    ],
+    images: [
+      '/src/assets/images/product_silk_wine_paithani.jpg'
+    ],
+    rating: 5.0,
+    reviewCount: 28,
+    inStock: true,
+    stockCount: 5,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-19',
+    name: 'Golden Honey Assam Muga Raw Silk Saree',
+    slug: 'golden-honey-assam-muga-raw-silk-saree',
+    category: 'Silk Sarees',
+    fabric: 'Pure Assam Muga Wild Silk',
+    color: 'Golden Honey',
+    occasion: 'Festive Collections',
+    zariType: 'Traditional Red & Antique Gold Geometric Threadwork',
+    price: 18500,
+    originalPrice: 22000,
+    discountPercent: 16,
+    description: 'Woven from the rare wild golden silkworm endemic to the Brahmaputra valley, Muga silk is revered for its natural amber-gold sheen that increases with every wash. Accentuated with red and black geometric mekhala-style motifs.',
+    details: {
+      weave: 'Assamese Handloom Weave',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Natural muga silk blouse fabric included',
+      weight: '760 grams',
+      origin: 'Sualkuchi, Assam',
+      certification: 'GI Tagged 100% Pure Muga Silk'
+    },
+    careInstructions: [
+      'Gentle cold hand wash or dry clean',
+      'Do not wring; dry flat in shade'
+    ],
+    images: [
+      '/src/assets/images/product_silk_honey_muga.jpg'
+    ],
+    rating: 4.9,
+    reviewCount: 22,
+    inStock: true,
+    stockCount: 4,
+    isBestSeller: false,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-20',
+    name: 'Royal Purple Varanasi Katan Silk Saree',
+    slug: 'royal-purple-varanasi-katan-silk-saree',
+    category: 'Silk Sarees',
+    fabric: 'Pure Katan Silk',
+    color: 'Royal Purple',
+    occasion: 'Bridal & Wedding',
+    zariType: 'Antique Gold & Silver Kadwa Zari',
+    price: 10500,
+    originalPrice: 12999,
+    discountPercent: 19,
+    description: 'Handcrafted from fine Katan silk with double twisted threads, this royal purple silk saree features opulent Kadwa zari floral creepers (jaal) hand-woven by hereditary weavers of Varanasi.',
+    details: {
+      weave: 'Kadwa Brocade Handloom',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Heavy brocade silk blouse piece',
+      weight: '850 grams',
+      origin: 'Varanasi, Uttar Pradesh',
+      certification: 'Silk Mark Certified Pure Silk'
+    },
+    careInstructions: [
+      'Strictly Dry Clean only',
+      'Wrap in cotton muslin'
+    ],
+    images: [
+      '/src/assets/images/product_banarasi_purple_1791712866730.jpg'
+    ],
+    rating: 4.9,
+    reviewCount: 31,
+    inStock: true,
+    stockCount: 7,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: false
+  },
+  {
+    id: 'prod-21',
+    name: 'Ivory & Crimson Tussar Bhagalpuri Silk Saree',
+    slug: 'ivory-crimson-tussar-bhagalpuri-silk-saree',
+    category: 'Silk Sarees',
+    fabric: 'Pure Tussar Raw Silk',
+    color: 'Ivory & Crimson Red',
+    occasion: 'Ethnic Wear',
+    zariType: 'Woven Antique Red & Gold Zari Border',
+    price: 8200,
+    originalPrice: 9800,
+    discountPercent: 16,
+    description: 'Natural wild Tussar silk offering rich textured drape with handcrafted red temple borders and delicate golden butis across the body, certified by the Silk Mark Organisation.',
+    details: {
+      weave: 'Bhagalpuri Handloom',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Contrast crimson raw silk blouse piece',
+      weight: '690 grams',
+      origin: 'Bhagalpur, Bihar',
+      certification: 'Silk Mark Certified 100% Pure Silk'
+    },
+    careInstructions: [
+      'Dry Clean only',
+      'Store in dry cedar or muslin bag'
+    ],
+    images: [
+      '/src/assets/images/banner_handloom_cream_1791712842478.jpg'
+    ],
+    rating: 4.8,
+    reviewCount: 18,
+    inStock: true,
+    stockCount: 9,
+    isBestSeller: false,
+    isFeatured: true,
+    isNewArrival: true
   }
 ];
 

@@ -8,20 +8,40 @@ export const isCategoryMatch = (product: Product, categoryQuery: string): boolea
   if (!categoryQuery || categoryQuery === 'all') return true;
   const target = categoryQuery.toLowerCase().trim();
 
+  // Silk Sarees: ONLY 100% Pure Silk sarees, absolutely NO cotton or georgette
+  if (target === 'silk sarees' || target === 'silk-sarees' || target === 'silk') {
+    if (
+      product.category.toLowerCase().includes('cotton') ||
+      product.category.toLowerCase().includes('georgette') ||
+      product.fabric.toLowerCase().includes('cotton') ||
+      product.fabric.toLowerCase().includes('viscose')
+    ) {
+      return false;
+    }
+    return (
+      product.category.toLowerCase() === 'silk sarees' ||
+      product.category.toLowerCase().includes('silk') ||
+      (product.fabric.toLowerCase().includes('silk') && !product.fabric.toLowerCase().includes('cotton'))
+    );
+  }
+
+  // Cotton Sarees: ONLY authentic cotton sarees, absolutely NO pure silk or georgette
+  if (target === 'cotton sarees' || target === 'cotton-sarees' || target === 'cotton') {
+    if (
+      (product.category.toLowerCase().includes('silk') && !product.category.toLowerCase().includes('cotton')) ||
+      product.category.toLowerCase().includes('georgette')
+    ) {
+      return false;
+    }
+    return (
+      product.category.toLowerCase() === 'cotton sarees' ||
+      product.category.toLowerCase().includes('cotton') ||
+      product.fabric.toLowerCase().includes('cotton')
+    );
+  }
+
   // Direct category equality
   if (product.category.toLowerCase() === target) return true;
-
-  // Silk Sarees (matches silk category, fabric, name, or silk certification)
-  if (target.includes('silk')) {
-    if (
-      product.category.toLowerCase().includes('silk') ||
-      product.fabric.toLowerCase().includes('silk') ||
-      product.name.toLowerCase().includes('silk') ||
-      product.details?.certification?.toLowerCase().includes('silk')
-    ) {
-      return true;
-    }
-  }
 
   // Banarasi Sarees
   if (target.includes('banarasi')) {
@@ -42,17 +62,6 @@ export const isCategoryMatch = (product: Product, categoryQuery: string): boolea
       product.name.toLowerCase().includes('kanjivaram') ||
       product.details?.origin?.toLowerCase().includes('kanchipuram') ||
       product.details?.weave?.toLowerCase().includes('korvai')
-    ) {
-      return true;
-    }
-  }
-
-  // Cotton Sarees
-  if (target.includes('cotton')) {
-    if (
-      product.category.toLowerCase().includes('cotton') ||
-      product.fabric.toLowerCase().includes('cotton') ||
-      product.name.toLowerCase().includes('cotton')
     ) {
       return true;
     }
