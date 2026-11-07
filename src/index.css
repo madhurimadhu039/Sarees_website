@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #221C20;
+    background-color: #FAF7F2;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom styling for luxury touch */
+.bg-cream {
+  background-color: #FAF7F2;
+}
+
+.bg-plum {
+  background-color: #3B1637;
+}
+
+.bg-royal-purple {
+  background-color: #581C4E;
+}
+
+.text-plum {
+  color: #3B1637;
+}
+
+.text-royal-purple {
+  color: #581C4E;
+}
+
+.border-plum {
+  border-color: #581C4E;
+}
+
+/* Smooth transitions */
+* {
+  box-sizing: border-box;
+}
+
+/* Custom scrollbar for boutique drawer */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8CECC;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B9A8A5;
+}

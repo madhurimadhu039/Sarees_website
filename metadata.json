@@ -1,0 +1,6 @@
+{
+  "name": "SareeAura – Luxury Indian Sarees & Ethnic Weaves",
+  "description": "Discover timeless Banarasi, Kanjivaram, Chanderi, and handloom silk sarees crafted by master weavers. Experience tradition in every drape with SareeAura.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
