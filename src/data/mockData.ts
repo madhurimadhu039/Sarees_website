@@ -958,6 +958,80 @@ export const INITIAL_PRODUCTS: Product[] = [
     isBestSeller: false,
     isFeatured: true,
     isNewArrival: true
+  },
+  {
+    id: 'prod-25',
+    name: 'Midnight Black Kashmiri Kashida Georgette Saree',
+    slug: 'midnight-black-kashmiri-kashida-georgette-saree',
+    category: 'Georgette Sarees',
+    fabric: 'Pure Viscose Georgette',
+    color: 'Black',
+    occasion: 'Party Wear',
+    zariType: 'Handcrafted Crimson-Orange Floral Border',
+    price: 5499,
+    originalPrice: 6800,
+    discountPercent: 19,
+    description: 'A striking creation in pitch-black sheer georgette, richly accentuated by traditional Kashmiri Kashida threadwork along the border with intricate silver leafy vines across the body.',
+    details: {
+      weave: 'Kashmiri Kashida Hand Embroidery on Georgette',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Running black georgette blouse piece with border',
+      weight: '510 grams',
+      origin: 'Srinagar, Jammu & Kashmir',
+      certification: 'Handloom & Handicraft Certified'
+    },
+    careInstructions: [
+      'Dry Clean exclusively',
+      'Store flat in muslin cover',
+      'Steam iron on reverse'
+    ],
+    images: [
+      '/src/assets/images/product_georgette_black_kashmiri.jpg'
+    ],
+    rating: 5.0,
+    reviewCount: 38,
+    inStock: true,
+    stockCount: 8,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-26',
+    name: 'Heritage Crimson Red Jaal Georgette Saree',
+    slug: 'heritage-crimson-red-jaal-georgette-saree',
+    category: 'Georgette Sarees',
+    fabric: 'Pure Viscose Georgette',
+    color: 'Crimson Red',
+    occasion: 'Festive Collections',
+    zariType: 'Heavy Tested Gold Zari Scalloped Jaal Border',
+    price: 5999,
+    originalPrice: 7200,
+    discountPercent: 17,
+    description: 'A showstopping festive look in rich auspicious crimson red georgette, adorned with intricate golden floral jaal work and an opulent scalloped embroidered border with subtle sequin shimmer.',
+    details: {
+      weave: 'Intricate Jaal Embroidery with Scalloped Zari Edge',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Contrast brocade embroidered blouse piece',
+      weight: '550 grams',
+      origin: 'Surat, Gujarat',
+      certification: 'Quality Verified High-Twist Georgette'
+    },
+    careInstructions: [
+      'Dry Clean only',
+      'Do not wring; store flat',
+      'Low heat iron on reverse side'
+    ],
+    images: [
+      '/src/assets/images/product_georgette_crimson_jaal.jpg'
+    ],
+    rating: 4.9,
+    reviewCount: 41,
+    inStock: true,
+    stockCount: 6,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
   }
 ];
 
