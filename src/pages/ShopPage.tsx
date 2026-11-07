@@ -70,12 +70,18 @@ export const isCategoryMatch = (product: Product, categoryQuery: string): boolea
   // Georgette Sarees
   if (target.includes('georgette')) {
     if (
-      product.category.toLowerCase().includes('georgette') ||
-      product.fabric.toLowerCase().includes('georgette') ||
-      product.name.toLowerCase().includes('georgette')
+      product.category.toLowerCase().includes('cotton') ||
+      product.category.toLowerCase() === 'silk sarees' ||
+      product.category.toLowerCase().includes('banarasi') ||
+      product.category.toLowerCase().includes('kanjivaram')
     ) {
-      return true;
+      return false;
     }
+    return (
+      product.category.toLowerCase() === 'georgette sarees' ||
+      product.category.toLowerCase().includes('georgette') ||
+      product.fabric.toLowerCase().includes('georgette')
+    );
   }
 
   // Handloom Sarees
@@ -149,8 +155,8 @@ export const ShopPage: React.FC<ShopPageProps> = ({ initialCategory, onSelectPro
 
   // Available filter options extracted dynamically
   const fabrics = ['all', ...Array.from(new Set(products.map(p => p.fabric)))];
-  const occasions = ['all', 'Bridal & Wedding', 'Festive Collections', 'Party Wear', 'Ethnic Wear'];
-  const colors = ['all', 'Royal Purple', 'Emerald Green', 'Blush Coral', 'Slate Blue', 'Crimson Red', 'Ivory & Crimson Red'];
+  const occasions = ['all', ...Array.from(new Set(products.map(p => p.occasion)))];
+  const colors = ['all', ...Array.from(new Set(products.map(p => p.color)))];
 
   // Filter & Sort Logic
   const filteredProducts = useMemo(() => {

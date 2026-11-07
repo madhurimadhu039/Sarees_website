@@ -454,39 +454,40 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-11',
-    name: 'Coral Sunset Embroidered Georgette Saree',
-    slug: 'coral-sunset-embroidered-georgette-saree',
+    name: 'Lavender Lilac Chikankari Georgette Saree',
+    slug: 'lavender-lilac-chikankari-georgette-saree',
     category: 'Georgette Sarees',
     fabric: 'Pure Viscose Georgette',
-    color: 'Blush Coral',
-    occasion: 'Party Wear',
-    zariType: 'Delicate Sequin & Thread Embroidery',
-    price: 4899,
-    originalPrice: 5800,
-    discountPercent: 15,
-    description: 'Chic, weightless, and modern. This blush coral georgette saree features handcrafted micro-sequin borders that glisten under evening lights without overpowering the drape.',
+    color: 'Lavender',
+    occasion: 'Festive Collections',
+    zariType: 'Lucknowi Chikankari & Silver Mukaish Work',
+    price: 4999,
+    originalPrice: 6200,
+    discountPercent: 19,
+    description: 'An epitome of pastel poetry, this soft lavender lilac pure georgette saree features intricate handcrafted Lucknowi Chikankari floral needlework accentuated by delicate silver mukaish accents and a scalloped embroidered border.',
     details: {
-      weave: 'Fine Machine Embroidery on Georgette',
+      weave: 'Lucknowi Hand Chikankari on Pure Georgette',
       length: '5.5 metres + 0.8 metre blouse piece',
-      blousePiece: 'Heavy embroidered designer blouse piece',
-      weight: '520 grams',
-      origin: 'Surat, Gujarat',
-      certification: 'Quality Verified High-Twist Georgette'
+      blousePiece: 'Matching embroidered georgette blouse piece included',
+      weight: '490 grams',
+      origin: 'Lucknow, Uttar Pradesh',
+      certification: 'Handcrafted Heritage Certified'
     },
     careInstructions: [
-      'Dry Clean only',
-      'Store flat'
+      'Dry Clean exclusively',
+      'Store flat in muslin cover',
+      'Steam press on reverse side'
     ],
     images: [
-      '/src/assets/images/product_georgette_coral_1791712916242.jpg'
+      '/src/assets/images/product_georgette_lavender_chikankari.jpg'
     ],
     rating: 4.9,
-    reviewCount: 22,
+    reviewCount: 28,
     inStock: true,
-    stockCount: 9,
+    stockCount: 11,
     isBestSeller: true,
     isFeatured: true,
-    isNewArrival: false
+    isNewArrival: true
   },
   {
     id: 'prod-12',
@@ -883,6 +884,78 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     stockCount: 7,
     isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-23',
+    name: 'Midnight Navy Blue Sequin Georgette Saree',
+    slug: 'midnight-navy-blue-sequin-georgette-saree',
+    category: 'Georgette Sarees',
+    fabric: 'Poly-Viscose Flowy Georgette',
+    color: 'Navy Blue',
+    occasion: 'Party Wear',
+    zariType: 'Tone-on-Tone Micro Sequin & Threadwork Border',
+    price: 5299,
+    originalPrice: 6500,
+    discountPercent: 18,
+    description: 'Made for glamorous starlit evenings and cocktail receptions, this midnight navy georgette saree boasts shimmering tone-on-tone micro-sequin borders and celestial floral butis that catch ambient light with every step.',
+    details: {
+      weave: 'Embroidered Sequin Work on Flowy Georgette',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Heavy designer sequin embroidered blouse fabric',
+      weight: '530 grams',
+      origin: 'Surat, Gujarat',
+      certification: 'Quality Verified High-Twist Georgette'
+    },
+    careInstructions: [
+      'Dry clean only',
+      'Do not iron directly on sequins'
+    ],
+    images: [
+      '/src/assets/images/product_georgette_navy_sequin.jpg'
+    ],
+    rating: 5.0,
+    reviewCount: 34,
+    inStock: true,
+    stockCount: 8,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-24',
+    name: 'Pastel Mint Botanical Printed Georgette Saree',
+    slug: 'pastel-mint-botanical-printed-georgette-saree',
+    category: 'Georgette Sarees',
+    fabric: 'Pure Viscose Georgette',
+    color: 'Mint Green',
+    occasion: 'Ethnic Wear',
+    zariType: 'Scalloped Gold Zari Embroidered Edging',
+    price: 3899,
+    originalPrice: 4800,
+    discountPercent: 19,
+    description: 'Breezy and effortlessly chic, this refreshing pastel mint green pure georgette saree features watercolor botanical blooms paired with a finely embroidered scalloped golden zari border.',
+    details: {
+      weave: 'Digital Botanical Print with Scalloped Zari Border',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Unstitched plain mint silk-blend blouse piece',
+      weight: '440 grams',
+      origin: 'Jaipur, Rajasthan',
+      certification: 'Quality Verified Pure Georgette'
+    },
+    careInstructions: [
+      'Gentle hand wash with mild shampoo or dry clean',
+      'Drip dry in shade'
+    ],
+    images: [
+      '/src/assets/images/product_georgette_mint_floral.jpg'
+    ],
+    rating: 4.8,
+    reviewCount: 19,
+    inStock: true,
+    stockCount: 12,
+    isBestSeller: false,
     isFeatured: true,
     isNewArrival: true
   }
