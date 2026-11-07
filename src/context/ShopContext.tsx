@@ -78,8 +78,18 @@ const ShopContext = createContext<ShopContextType | undefined>(undefined);
 export const ShopProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // Products
   const [products, setProducts] = useState<Product[]>(() => {
-    const saved = localStorage.getItem('sareaura_products');
-    return saved ? JSON.parse(saved) : INITIAL_PRODUCTS;
+    try {
+      const saved = localStorage.getItem('sareaura_products_v2');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length >= INITIAL_PRODUCTS.length) {
+          return parsed;
+        }
+      }
+    } catch {
+      // fallback
+    }
+    return INITIAL_PRODUCTS;
   });
 
   // Cart
@@ -145,7 +155,7 @@ export const ShopProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   // LocalStorage sync
   useEffect(() => {
-    localStorage.setItem('sareaura_products', JSON.stringify(products));
+    localStorage.setItem('sareaura_products_v2', JSON.stringify(products));
   }, [products]);
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Search, Heart, ShoppingBag, User, Menu, X, ChevronDown, ShieldCheck, ExternalLink } from 'lucide-react';
 import { BrandLogo } from './BrandLogo';
 import { useShop } from '../context/ShopContext';
@@ -13,7 +13,20 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, onSearc
   const { cart, wishlist, setIsCartOpen, user, toggleUserRole, categories } = useShop();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [collectionsDropdownOpen, setCollectionsDropdownOpen] = useState(false);
+  const [mobileCollectionsOpen, setMobileCollectionsOpen] = useState(false);
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);
+  const collectionsRef = useRef<HTMLDivElement>(null);
+
+  // Close collections dropdown on click outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (collectionsRef.current && !collectionsRef.current.contains(event.target as Node)) {
+        setCollectionsDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const totalCartItems = cart.reduce((sum, item) => sum + item.quantity, 0);
   const wishlistCount = wishlist.length;
@@ -112,45 +125,64 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, onSearc
 
             {/* Collections Dropdown */}
             <div
+              ref={collectionsRef}
               className="relative"
               onMouseEnter={() => setCollectionsDropdownOpen(true)}
               onMouseLeave={() => setCollectionsDropdownOpen(false)}
             >
               <button
-                onClick={() => onNavigate('shop')}
-                className="flex items-center gap-1 text-sm font-medium text-[#4A3E47] hover:text-[#581C4E] transition-colors py-1 cursor-pointer"
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setCollectionsDropdownOpen(prev => !prev);
+                }}
+                className={`flex items-center gap-1.5 text-sm font-medium transition-colors py-1 cursor-pointer ${
+                  collectionsDropdownOpen || (currentView === 'shop')
+                    ? 'text-[#581C4E] font-semibold'
+                    : 'text-[#4A3E47] hover:text-[#581C4E]'
+                }`}
+                aria-expanded={collectionsDropdownOpen}
+                aria-haspopup="true"
               >
-                Collections
-                <ChevronDown className="w-3.5 h-3.5" />
+                <span>Collections</span>
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${collectionsDropdownOpen ? 'rotate-180 text-[#581C4E]' : ''}`} />
               </button>
 
               {collectionsDropdownOpen && (
-                <div className="absolute top-full left-0 w-64 pt-2 shadow-xl animate-in fade-in slide-in-from-top-1 z-50">
-                  <div className="bg-[#FAF7F2] border border-[#E8DEC8] rounded-xl shadow-lg p-2 divide-y divide-[#EFE5D5]">
-                    <div className="py-1">
-                      {categories.slice(0, 5).map(cat => (
+                <div className="absolute top-full left-0 w-72 pt-2 shadow-2xl animate-in fade-in slide-in-from-top-1 z-50">
+                  <div className="bg-[#FAF7F2] border border-[#E8DEC8] rounded-xl shadow-xl p-2.5 divide-y divide-[#EFE5D5]">
+                    <div className="py-1 space-y-0.5">
+                      {categories.map(cat => (
                         <button
                           key={cat.id}
-                          onClick={() => {
+                          type="button"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
                             setCollectionsDropdownOpen(false);
                             onNavigate('shop', cat.name);
                           }}
-                          className="w-full text-left px-3 py-2 text-xs text-[#3B1637] hover:bg-[#F2ECE1] rounded-lg transition-colors flex items-center justify-between"
+                          className="w-full text-left px-3 py-2 text-xs text-[#3B1637] hover:bg-[#F2ECE1] hover:text-[#581C4E] rounded-lg transition-colors flex items-center justify-between group cursor-pointer"
                         >
-                          <span className="font-medium">{cat.name}</span>
-                          <span className="text-[10px] text-[#845377]">{cat.subtitle}</span>
+                          <span className="font-semibold group-hover:translate-x-0.5 transition-transform">{cat.name}</span>
+                          <span className="text-[10px] text-[#845377] font-medium">{cat.subtitle}</span>
                         </button>
                       ))}
                     </div>
                     <div className="pt-2 px-3 pb-1">
                       <button
-                        onClick={() => {
+                        type="button"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
                           setCollectionsDropdownOpen(false);
                           onNavigate('shop');
                         }}
-                        className="text-xs font-semibold text-[#581C4E] hover:underline flex items-center gap-1"
+                        className="w-full text-left text-xs font-bold text-[#581C4E] hover:underline flex items-center justify-between cursor-pointer py-1"
                       >
-                        View All Collections →
+                        <span>View All Handcrafted Collections</span>
+                        <span>→</span>
                       </button>
                     </div>
                   </div>
@@ -337,6 +369,48 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, onSearc
             >
               Shop All Sarees
             </button>
+
+            {/* Mobile Collections Expandable Section */}
+            <div className="border-y border-[#E8DEC8]/80 py-2">
+              <button
+                type="button"
+                onClick={() => setMobileCollectionsOpen(prev => !prev)}
+                className="w-full flex items-center justify-between font-serif text-lg text-[#3B1637] py-1 text-left"
+              >
+                <span>Collections</span>
+                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${mobileCollectionsOpen ? 'rotate-180 text-[#581C4E]' : ''}`} />
+              </button>
+              {mobileCollectionsOpen && (
+                <div className="mt-2 pl-3 space-y-1.5 border-l-2 border-[#581C4E]/40 animate-in fade-in">
+                  {categories.map(cat => (
+                    <button
+                      key={cat.id}
+                      type="button"
+                      onClick={() => {
+                        setMobileCollectionsOpen(false);
+                        setMobileMenuOpen(false);
+                        onNavigate('shop', cat.name);
+                      }}
+                      className="w-full text-left py-1.5 text-sm font-medium text-[#4A3E47] hover:text-[#581C4E] flex items-center justify-between"
+                    >
+                      <span>{cat.name}</span>
+                      <span className="text-[11px] text-[#845377]">{cat.subtitle}</span>
+                    </button>
+                  ))}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setMobileCollectionsOpen(false);
+                      setMobileMenuOpen(false);
+                      onNavigate('shop');
+                    }}
+                    className="w-full text-left py-1.5 text-xs font-bold text-[#581C4E] hover:underline pt-2 block"
+                  >
+                    View All Collections →
+                  </button>
+                </div>
+              )}
+            </div>
             <button
               onClick={() => {
                 setMobileMenuOpen(false);

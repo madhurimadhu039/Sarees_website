@@ -302,6 +302,229 @@ export const INITIAL_PRODUCTS: Product[] = [
     isBestSeller: false,
     isFeatured: true,
     isNewArrival: true
+  },
+  {
+    id: 'prod-7',
+    name: 'Midnight Gold Party Wear Silk Saree',
+    slug: 'midnight-gold-party-wear-silk-saree',
+    category: 'Party Wear Sarees',
+    fabric: 'Pure Katan Silk',
+    color: 'Royal Purple',
+    occasion: 'Party Wear',
+    zariType: 'Antique Gold Zari & Sequin Pallu',
+    price: 7200,
+    originalPrice: 8900,
+    discountPercent: 19,
+    description: 'Designed for gala evenings and high-profile festivities, this midnight violet silk saree blends pure Katan silk with dazzling metallic gold zari motifs and a dramatic scalloped pallu.',
+    details: {
+      weave: 'Contemporary Jacquard Silk Weave',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Designer embroidered blouse fabric included',
+      weight: '720 grams',
+      origin: 'Varanasi, Uttar Pradesh',
+      certification: 'Silk Mark Certified 100% Pure Silk'
+    },
+    careInstructions: [
+      'Dry Clean only',
+      'Wrap in cotton muslin',
+      'Low heat iron on reverse side'
+    ],
+    images: [
+      '/src/assets/images/product_banarasi_purple_1791712866730.jpg',
+      '/src/assets/images/banner_banarasi_pallu_1791712855920.jpg'
+    ],
+    rating: 4.9,
+    reviewCount: 16,
+    inStock: true,
+    stockCount: 7,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-8',
+    name: 'Royal Red Bridal Trousseau Kanjivaram',
+    slug: 'royal-red-bridal-trousseau-kanjivaram',
+    category: 'Bridal & Wedding',
+    fabric: 'Pure Mulberry Silk',
+    color: 'Crimson Red',
+    occasion: 'Bridal & Wedding',
+    zariType: 'Pure Gold & Silver Electroplated Zari',
+    price: 16500,
+    originalPrice: 19999,
+    discountPercent: 17,
+    description: 'The crowning jewel of any bridal trousseau. Handcrafted with traditional Korvai temple borders, sacred swan and peacock motifs, and a resplendent solid gold zari pallu.',
+    details: {
+      weave: 'Three-Shuttle Korvai Handloom',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Heavy brocade blouse piece included',
+      weight: '990 grams',
+      origin: 'Kanchipuram, Tamil Nadu',
+      certification: 'GI Tagged & Silk Mark Certified'
+    },
+    careInstructions: [
+      'Strictly Dry Clean only',
+      'Store flat wrapped in unbleached muslin',
+      'Protect from direct sunlight and perfume'
+    ],
+    images: [
+      '/src/assets/images/hero_saree_model_1791712828037.jpg',
+      '/src/assets/images/product_kanjivaram_red_1791712939874.jpg'
+    ],
+    rating: 5.0,
+    reviewCount: 38,
+    inStock: true,
+    stockCount: 4,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: false
+  },
+  {
+    id: 'prod-9',
+    name: 'Kashi Gold Brocade Banarasi Saree',
+    slug: 'kashi-gold-brocade-banarasi-saree',
+    category: 'Banarasi Sarees',
+    fabric: 'Pure Katan Silk',
+    color: 'Emerald Green',
+    occasion: 'Festive Collections',
+    zariType: 'Regal Golden Zari Kadwa Brocade',
+    price: 9200,
+    originalPrice: 11500,
+    discountPercent: 20,
+    description: 'A masterpiece from the heritage looms of Kashi, featuring intricate botanical bel motifs in genuine golden zari on deep emerald silk. Comes with a matching brocade blouse piece.',
+    details: {
+      weave: 'Varanasi Kadwa Brocade',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Contrast brocade blouse piece',
+      weight: '840 grams',
+      origin: 'Varanasi, Uttar Pradesh',
+      certification: 'Silk Mark Certified Pure Silk'
+    },
+    careInstructions: [
+      'Dry Clean only',
+      'Store in muslin pouch'
+    ],
+    images: [
+      '/src/assets/images/product_meenakari_green_1791712880156.jpg',
+      '/src/assets/images/banner_banarasi_pallu_1791712855920.jpg'
+    ],
+    rating: 4.8,
+    reviewCount: 19,
+    inStock: true,
+    stockCount: 6,
+    isBestSeller: false,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-10',
+    name: 'Chanderi Handloom Festive Cotton Saree',
+    slug: 'chanderi-handloom-festive-cotton-saree',
+    category: 'Cotton Sarees',
+    fabric: 'Pure Chanderi Cotton',
+    color: 'Slate Blue',
+    occasion: 'Festive Collections',
+    zariType: 'Woven Silver Temple Border',
+    price: 3400,
+    originalPrice: 4200,
+    discountPercent: 19,
+    description: 'Breezy luxury crafted for sunny celebrations and daytime functions. Features subtle butis across the body and a finely woven zari border on lightweight hand-spun cotton.',
+    details: {
+      weave: 'Chanderi Handloom',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Running cotton blouse piece',
+      weight: '410 grams',
+      origin: 'Chanderi, Madhya Pradesh',
+      certification: 'Handloom Mark India'
+    },
+    careInstructions: [
+      'Cold gentle hand wash or dry clean',
+      'Medium heat iron'
+    ],
+    images: [
+      '/src/assets/images/product_cotton_blue_1791712928505.jpg',
+      '/src/assets/images/banner_handloom_cream_1791712842478.jpg'
+    ],
+    rating: 4.7,
+    reviewCount: 14,
+    inStock: true,
+    stockCount: 11,
+    isBestSeller: false,
+    isFeatured: false,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-11',
+    name: 'Coral Sunset Embroidered Georgette Saree',
+    slug: 'coral-sunset-embroidered-georgette-saree',
+    category: 'Georgette Sarees',
+    fabric: 'Pure Viscose Georgette',
+    color: 'Blush Coral',
+    occasion: 'Party Wear',
+    zariType: 'Delicate Sequin & Thread Embroidery',
+    price: 4899,
+    originalPrice: 5800,
+    discountPercent: 15,
+    description: 'Chic, weightless, and modern. This blush coral georgette saree features handcrafted micro-sequin borders that glisten under evening lights without overpowering the drape.',
+    details: {
+      weave: 'Fine Machine Embroidery on Georgette',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Heavy embroidered designer blouse piece',
+      weight: '520 grams',
+      origin: 'Surat, Gujarat',
+      certification: 'Quality Verified High-Twist Georgette'
+    },
+    careInstructions: [
+      'Dry Clean only',
+      'Store flat'
+    ],
+    images: [
+      '/src/assets/images/product_georgette_coral_1791712916242.jpg'
+    ],
+    rating: 4.9,
+    reviewCount: 22,
+    inStock: true,
+    stockCount: 9,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: false
+  },
+  {
+    id: 'prod-12',
+    name: 'Temple Gold Heritage Silk Saree',
+    slug: 'temple-gold-heritage-silk-saree',
+    category: 'Silk Sarees',
+    fabric: 'Pure Mulberry Silk',
+    color: 'Crimson Red',
+    occasion: 'Bridal & Wedding',
+    zariType: 'Heavy Tested Gold Zari',
+    price: 11999,
+    originalPrice: 14500,
+    discountPercent: 17,
+    description: 'A radiant creation in auspicious crimson silk, featuring antique gold electroplated zari motifs along the borders and a majestic grand pallu for timeless ceremonial presence.',
+    details: {
+      weave: 'Traditional Korvai Weave',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Contrast brocade blouse included',
+      weight: '890 grams',
+      origin: 'Tamil Nadu',
+      certification: 'Silk Mark Certified Pure Silk'
+    },
+    careInstructions: [
+      'Dry clean exclusively',
+      'Store in unbleached muslin wrap'
+    ],
+    images: [
+      '/src/assets/images/product_kanjivaram_red_1791712939874.jpg',
+      '/src/assets/images/hero_saree_model_1791712828037.jpg'
+    ],
+    rating: 5.0,
+    reviewCount: 31,
+    inStock: true,
+    stockCount: 6,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
   }
 ];
 

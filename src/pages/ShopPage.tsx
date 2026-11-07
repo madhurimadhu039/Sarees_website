@@ -1,8 +1,112 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Filter, SlidersHorizontal, X, Search, RotateCcw, ArrowUpDown } from 'lucide-react';
 import { Product } from '../types';
 import { useShop } from '../context/ShopContext';
 import { ProductCard } from '../components/ProductCard';
+
+export const isCategoryMatch = (product: Product, categoryQuery: string): boolean => {
+  if (!categoryQuery || categoryQuery === 'all') return true;
+  const target = categoryQuery.toLowerCase().trim();
+
+  // Direct category equality
+  if (product.category.toLowerCase() === target) return true;
+
+  // Silk Sarees (matches silk category, fabric, name, or silk certification)
+  if (target.includes('silk')) {
+    if (
+      product.category.toLowerCase().includes('silk') ||
+      product.fabric.toLowerCase().includes('silk') ||
+      product.name.toLowerCase().includes('silk') ||
+      product.details?.certification?.toLowerCase().includes('silk')
+    ) {
+      return true;
+    }
+  }
+
+  // Banarasi Sarees
+  if (target.includes('banarasi')) {
+    if (
+      product.category.toLowerCase().includes('banarasi') ||
+      product.name.toLowerCase().includes('banarasi') ||
+      product.details?.weave?.toLowerCase().includes('varanasi') ||
+      product.details?.origin?.toLowerCase().includes('varanasi')
+    ) {
+      return true;
+    }
+  }
+
+  // Kanjivaram Sarees
+  if (target.includes('kanjivaram') || target.includes('kanchipuram')) {
+    if (
+      product.category.toLowerCase().includes('kanjivaram') ||
+      product.name.toLowerCase().includes('kanjivaram') ||
+      product.details?.origin?.toLowerCase().includes('kanchipuram') ||
+      product.details?.weave?.toLowerCase().includes('korvai')
+    ) {
+      return true;
+    }
+  }
+
+  // Cotton Sarees
+  if (target.includes('cotton')) {
+    if (
+      product.category.toLowerCase().includes('cotton') ||
+      product.fabric.toLowerCase().includes('cotton') ||
+      product.name.toLowerCase().includes('cotton')
+    ) {
+      return true;
+    }
+  }
+
+  // Georgette Sarees
+  if (target.includes('georgette')) {
+    if (
+      product.category.toLowerCase().includes('georgette') ||
+      product.fabric.toLowerCase().includes('georgette') ||
+      product.name.toLowerCase().includes('georgette')
+    ) {
+      return true;
+    }
+  }
+
+  // Handloom Sarees
+  if (target.includes('handloom')) {
+    if (
+      product.category.toLowerCase().includes('handloom') ||
+      product.name.toLowerCase().includes('handloom') ||
+      product.details?.weave?.toLowerCase().includes('handloom') ||
+      product.details?.certification?.toLowerCase().includes('handloom')
+    ) {
+      return true;
+    }
+  }
+
+  // Party Wear Sarees
+  if (target.includes('party')) {
+    if (
+      product.category.toLowerCase().includes('party') ||
+      product.occasion.toLowerCase().includes('party') ||
+      product.name.toLowerCase().includes('party')
+    ) {
+      return true;
+    }
+  }
+
+  // Bridal & Wedding Sarees
+  if (target.includes('bridal') || target.includes('wedding')) {
+    if (
+      product.category.toLowerCase().includes('bridal') ||
+      product.category.toLowerCase().includes('wedding') ||
+      product.occasion.toLowerCase().includes('bridal') ||
+      product.occasion.toLowerCase().includes('wedding') ||
+      product.name.toLowerCase().includes('bridal')
+    ) {
+      return true;
+    }
+  }
+
+  return false;
+};
 
 interface ShopPageProps {
   initialCategory?: string;
@@ -23,6 +127,17 @@ export const ShopPage: React.FC<ShopPageProps> = ({ initialCategory, onSelectPro
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState<boolean>(false);
 
+  // Sync category state when navigating from header or external view
+  useEffect(() => {
+    if (initialCategory !== undefined) {
+      setSelectedCategory(initialCategory || 'all');
+      setSelectedFabric('all');
+      setSelectedOccasion('all');
+      setSelectedColor('all');
+      setSearchQuery('');
+    }
+  }, [initialCategory]);
+
   // Available filter options extracted dynamically
   const fabrics = ['all', ...Array.from(new Set(products.map(p => p.fabric)))];
   const occasions = ['all', 'Bridal & Wedding', 'Festive Collections', 'Party Wear', 'Ethnic Wear'];
@@ -33,9 +148,7 @@ export const ShopPage: React.FC<ShopPageProps> = ({ initialCategory, onSelectPro
     return products.filter(product => {
       // Category Match
       if (selectedCategory !== 'all') {
-        const catObj = categories.find(c => c.name.toLowerCase() === selectedCategory.toLowerCase() || c.slug === selectedCategory);
-        const matchName = catObj ? catObj.name : selectedCategory;
-        if (product.category.toLowerCase() !== matchName.toLowerCase()) {
+        if (!isCategoryMatch(product, selectedCategory)) {
           return false;
         }
       }
@@ -196,7 +309,7 @@ export const ShopPage: React.FC<ShopPageProps> = ({ initialCategory, onSelectPro
                 <span className="text-[11px] opacity-75">{products.length}</span>
               </button>
               {categories.map(cat => {
-                const count = products.filter(p => p.category.toLowerCase() === cat.name.toLowerCase()).length;
+                const count = products.filter(p => isCategoryMatch(p, cat.name)).length;
                 return (
                   <button
                     key={cat.id}
