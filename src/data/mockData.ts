@@ -6,7 +6,7 @@ export const INITIAL_CATEGORIES: Category[] = [
     name: 'Silk Sarees',
     slug: 'silk-sarees',
     subtitle: 'Elegant & Rich',
-    image: '/src/assets/images/product_silk_peacock_blue.jpg',
+    image: '/src/assets/images/product_silk_royal_blue_kanjivaram.jpg',
     description: 'Pure Mulberry and Katan silk woven with luminous gold and silver zari.'
   },
   {
@@ -139,8 +139,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       'Steam iron only on delicate fabric setting'
     ],
     images: [
-      '/src/assets/images/product_meenakari_green_1791712880156.jpg',
-      '/src/assets/images/banner_banarasi_pallu_1791712855920.jpg'
+      '/src/assets/images/product_silk_emerald_banarasi.jpg',
+      '/src/assets/images/product_meenakari_green_1791712880156.jpg'
     ],
     rating: 4.8,
     reviewCount: 18,
@@ -405,8 +405,8 @@ export const INITIAL_PRODUCTS: Product[] = [
       'Store in muslin pouch'
     ],
     images: [
-      '/src/assets/images/product_meenakari_green_1791712880156.jpg',
-      '/src/assets/images/banner_banarasi_pallu_1791712855920.jpg'
+      '/src/assets/images/product_silk_emerald_banarasi.jpg',
+      '/src/assets/images/product_meenakari_green_1791712880156.jpg'
     ],
     rating: 4.8,
     reviewCount: 19,
@@ -491,23 +491,23 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-12',
-    name: 'Mustard Gold Chanderi Katan Silk Saree',
-    slug: 'mustard-gold-chanderi-katan-silk-saree',
+    name: 'Mango Yellow & Magenta Pattu Pure Silk Saree',
+    slug: 'mango-yellow-magenta-pattu-pure-silk-saree',
     category: 'Silk Sarees',
-    fabric: 'Pure Chanderi Katan Silk',
-    color: 'Mustard Yellow',
+    fabric: 'Pure Kanchipuram Mulberry Silk',
+    color: 'Mango Yellow',
     occasion: 'Festive Collections',
-    zariType: 'Fine Tested Silver-Gold Floral Butis',
-    price: 10499,
-    originalPrice: 12500,
-    discountPercent: 16,
-    description: 'Exquisitely hand-spun from pure Katan silk threads, this radiant mustard yellow Chanderi silk saree features delicate silver-gold floral butis scattered gracefully across the body and a refined heritage pallu.',
+    zariType: 'Heavy Tested Gold Zari with Brocade Motifs',
+    price: 11999,
+    originalPrice: 14500,
+    discountPercent: 17,
+    description: 'A magnificent creation in festive golden mango yellow pure silk, framed with contrasting royal magenta pink gold zari borders and intricate floral buttas. Features a solid gold woven zari pallu and coordinating magenta silk blouse fabric.',
     details: {
-      weave: 'Chanderi Katan Handloom',
+      weave: 'Kanchipuram Handloom Weave',
       length: '5.5 metres + 0.8 metre blouse piece',
-      blousePiece: 'Contrast raw silk blouse included',
-      weight: '620 grams',
-      origin: 'Chanderi, Madhya Pradesh',
+      blousePiece: 'Contrast royal magenta silk blouse included',
+      weight: '820 grams',
+      origin: 'Kanchipuram, Tamil Nadu',
       certification: 'Silk Mark Certified 100% Pure Silk'
     },
     careInstructions: [
@@ -515,7 +515,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       'Store in unbleached muslin wrap'
     ],
     images: [
-      '/src/assets/images/product_silk_mustard_chanderi.jpg'
+      '/src/assets/images/product_silk_mango_yellow_pattu.jpg'
     ],
     rating: 5.0,
     reviewCount: 31,
@@ -661,7 +661,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       'Iron on low heat setting'
     ],
     images: [
-      '/src/assets/images/product_silk_peacock_blue.jpg'
+      '/src/assets/images/product_silk_royal_blue_kanjivaram.jpg'
     ],
     rating: 5.0,
     reviewCount: 39,
@@ -697,7 +697,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       'Store flat wrapped in unbleached muslin'
     ],
     images: [
-      '/src/assets/images/product_silk_rani_pink.jpg'
+      '/src/assets/images/product_silk_rani_pattu.jpg'
     ],
     rating: 4.9,
     reviewCount: 44,
@@ -745,59 +745,60 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-19',
-    name: 'Golden Honey Assam Muga Raw Silk Saree',
-    slug: 'golden-honey-assam-muga-raw-silk-saree',
+    name: 'Auspicious Crimson & Temple Gold Pure Silk Saree',
+    slug: 'auspicious-crimson-temple-gold-pure-silk-saree',
     category: 'Silk Sarees',
-    fabric: 'Pure Assam Muga Wild Silk',
-    color: 'Golden Honey',
+    fabric: 'Pure Kanchipuram Mulberry Silk',
+    color: 'Crimson Red',
     occasion: 'Festive Collections',
-    zariType: 'Traditional Red & Antique Gold Geometric Threadwork',
-    price: 18500,
-    originalPrice: 22000,
-    discountPercent: 16,
-    description: 'Woven from the rare wild golden silkworm endemic to the Brahmaputra valley, Muga silk is revered for its natural amber-gold sheen that increases with every wash. Accentuated with red and black geometric mekhala-style motifs.',
+    zariType: 'Wide Solid Gold Zari Border with Elephant & Lotus Motifs',
+    price: 13999,
+    originalPrice: 16500,
+    discountPercent: 15,
+    description: 'An heirloom treasure woven in auspicious crimson red pure silk, framed with a magnificent solid gold zari border featuring sacred elephant and lotus motifs. Finished with a heavy golden brocade pallu and traditional silk tassels.',
     details: {
-      weave: 'Assamese Handloom Weave',
+      weave: 'Three-Shuttle Korvai Handloom Weave',
       length: '5.5 metres + 0.8 metre blouse piece',
-      blousePiece: 'Natural muga silk blouse fabric included',
-      weight: '760 grams',
-      origin: 'Sualkuchi, Assam',
-      certification: 'GI Tagged 100% Pure Muga Silk'
+      blousePiece: 'Contrast crimson brocade blouse included',
+      weight: '890 grams',
+      origin: 'Kanchipuram, Tamil Nadu',
+      certification: 'Silk Mark Certified 100% Pure Silk'
     },
     careInstructions: [
-      'Gentle cold hand wash or dry clean',
-      'Do not wring; dry flat in shade'
+      'Strictly Dry Clean only',
+      'Wrap in soft unbleached muslin cloth',
+      'Refold periodically along different crease lines'
     ],
     images: [
-      '/src/assets/images/product_silk_honey_muga.jpg'
+      '/src/assets/images/product_silk_crimson_temple_gold.jpg'
     ],
-    rating: 4.9,
-    reviewCount: 22,
+    rating: 5.0,
+    reviewCount: 32,
     inStock: true,
-    stockCount: 4,
-    isBestSeller: false,
+    stockCount: 6,
+    isBestSeller: true,
     isFeatured: true,
     isNewArrival: true
   },
   {
     id: 'prod-20',
-    name: 'Royal Purple Varanasi Katan Silk Saree',
-    slug: 'royal-purple-varanasi-katan-silk-saree',
+    name: 'Royal Violet Purple Paithani Pure Silk Saree',
+    slug: 'royal-violet-purple-paithani-pure-silk-saree',
     category: 'Silk Sarees',
-    fabric: 'Pure Katan Silk',
+    fabric: 'Pure Paithani Silk',
     color: 'Royal Purple',
     occasion: 'Festive Collections',
-    zariType: 'Antique Gold & Silver Kadwa Zari',
-    price: 10500,
-    originalPrice: 12999,
-    discountPercent: 19,
-    description: 'Handcrafted from fine Katan silk with double twisted threads, this royal purple silk saree features opulent Kadwa zari floral creepers (jaal) hand-woven by hereditary weavers of Varanasi.',
+    zariType: 'Solid Gold Tissue Border & Mor (Peacock) Tapestry Pallu',
+    price: 14500,
+    originalPrice: 17200,
+    discountPercent: 16,
+    description: 'Majestic deep violet-purple pure silk Paithani saree with pure gold zari butis, wide gold tissue border, and a breathtaking kaleidoscopic peacock tapestry weave across the pallu in rich jewel tones.',
     details: {
-      weave: 'Kadwa Brocade Handloom',
+      weave: 'Traditional Paithani Tapestry Weave',
       length: '5.5 metres + 0.8 metre blouse piece',
       blousePiece: 'Heavy brocade silk blouse piece',
-      weight: '850 grams',
-      origin: 'Varanasi, Uttar Pradesh',
+      weight: '860 grams',
+      origin: 'Paithan, Maharashtra',
       certification: 'Silk Mark Certified Pure Silk'
     },
     careInstructions: [
@@ -805,7 +806,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       'Wrap in cotton muslin'
     ],
     images: [
-      '/src/assets/images/product_banarasi_purple_1791712866730.jpg'
+      '/src/assets/images/product_silk_violet_paithani.jpg'
     ],
     rating: 4.9,
     reviewCount: 31,
@@ -817,34 +818,34 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-21',
-    name: 'Ivory & Crimson Tussar Bhagalpuri Silk Saree',
-    slug: 'ivory-crimson-tussar-bhagalpuri-silk-saree',
+    name: 'Sapphire Blue Mysore Crepe Pure Silk Saree',
+    slug: 'sapphire-blue-mysore-crepe-pure-silk-saree',
     category: 'Silk Sarees',
-    fabric: 'Pure Tussar Raw Silk',
-    color: 'Ivory & Crimson Red',
-    occasion: 'Ethnic Wear',
-    zariType: 'Woven Antique Red & Gold Zari Border',
-    price: 8200,
-    originalPrice: 9800,
-    discountPercent: 16,
-    description: 'Natural wild Tussar silk offering rich textured drape with handcrafted red temple borders and delicate golden butis across the body, certified by the Silk Mark Organisation.',
+    fabric: 'Pure Mysore Crepe Silk',
+    color: 'Peacock Blue',
+    occasion: 'Festive Collections',
+    zariType: 'Electroplated Tested Gold Zari Border',
+    price: 9999,
+    originalPrice: 11999,
+    discountPercent: 17,
+    description: 'Crafted from pure mulberry silk filaments with high-twist crepe yarn, this sapphire peacock blue Mysore silk saree radiates unmatched luster and a butter-soft drape, finished with an authentic golden zari border.',
     details: {
-      weave: 'Bhagalpuri Handloom',
+      weave: 'Mysore Silk Weave',
       length: '5.5 metres + 0.8 metre blouse piece',
-      blousePiece: 'Contrast crimson raw silk blouse piece',
-      weight: '690 grams',
-      origin: 'Bhagalpur, Bihar',
-      certification: 'Silk Mark Certified 100% Pure Silk'
+      blousePiece: 'Contrast pure crepe silk blouse piece',
+      weight: '620 grams',
+      origin: 'Mysuru, Karnataka',
+      certification: 'Silk Mark Certified 100% Pure Silk & GI Tagged'
     },
     careInstructions: [
       'Dry Clean only',
       'Store in dry cedar or muslin bag'
     ],
     images: [
-      '/src/assets/images/banner_handloom_cream_1791712842478.jpg'
+      '/src/assets/images/product_silk_peacock_blue.jpg'
     ],
-    rating: 4.8,
-    reviewCount: 18,
+    rating: 4.9,
+    reviewCount: 26,
     inStock: true,
     stockCount: 9,
     isBestSeller: false,
@@ -853,23 +854,23 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-22',
-    name: 'Teal Emerald Pure Tussar Silk Saree',
-    slug: 'teal-emerald-pure-tussar-silk-saree',
+    name: 'Resplendent Emerald Kadwa Banarasi Pure Silk Saree',
+    slug: 'resplendent-emerald-kadwa-banarasi-pure-silk-saree',
     category: 'Silk Sarees',
-    fabric: 'Pure Tussar Wild Silk',
+    fabric: 'Pure Katan Silk',
     color: 'Emerald Green',
-    occasion: 'Ethnic Wear',
-    zariType: 'Handcrafted Kantha Embroidery & Bronze Zari Border',
-    price: 11200,
-    originalPrice: 13500,
+    occasion: 'Festive Collections',
+    zariType: 'Fine Kadwa Golden Zari Floral Jaal',
+    price: 12500,
+    originalPrice: 14999,
     discountPercent: 17,
-    description: 'Exquisite deep teal emerald green pure Tussar wild silk saree with rich natural slub texture, handcrafted botanical Kantha stitch embroidery, and antique bronze zari border.',
+    description: 'Exquisite jewel-toned emerald green pure Katan silk saree with fine Kadwa golden zari floral jaal creepers woven across the entire body, complemented by an opulent antique gold zari border and grand pallu.',
     details: {
-      weave: 'Tussar Handloom with Hand Kantha Stitch',
+      weave: 'Varanasi Kadwa Handloom Weave',
       length: '5.5 metres + 0.8 metre blouse piece',
-      blousePiece: 'Running tussar silk blouse fabric included',
-      weight: '710 grams',
-      origin: 'Bishnupur, West Bengal',
+      blousePiece: 'Matching emerald brocade blouse fabric included',
+      weight: '840 grams',
+      origin: 'Varanasi, Uttar Pradesh',
       certification: 'Silk Mark Certified 100% Pure Silk'
     },
     careInstructions: [
@@ -877,10 +878,10 @@ export const INITIAL_PRODUCTS: Product[] = [
       'Store flat wrapped in soft cotton fabric'
     ],
     images: [
-      '/src/assets/images/product_silk_teal_tussar.jpg'
+      '/src/assets/images/product_silk_emerald_banarasi.jpg'
     ],
     rating: 5.0,
-    reviewCount: 27,
+    reviewCount: 29,
     inStock: true,
     stockCount: 7,
     isBestSeller: true,
