@@ -46,7 +46,7 @@ export const INITIAL_CATEGORIES: Category[] = [
     name: 'Handloom Sarees',
     slug: 'handloom-sarees',
     subtitle: 'Pure & Authentic',
-    image: '/src/assets/images/banner_handloom_cream_1791712842478.jpg',
+    image: '/src/assets/images/product_handloom_ivory_temple.jpg',
     description: 'Traditional master weaver handlooms honoring centuries-old craft heritage.'
   },
   {
@@ -292,8 +292,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       'Store in dry cedar or muslin bag'
     ],
     images: [
-      '/src/assets/images/banner_handloom_cream_1791712842478.jpg',
-      '/src/assets/images/hero_saree_model_1791712828037.jpg'
+      '/src/assets/images/product_handloom_ivory_temple.jpg'
     ],
     rating: 4.9,
     reviewCount: 29,
@@ -1175,6 +1174,154 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     rating: 5.0,
     reviewCount: 47,
+    inStock: true,
+    stockCount: 9,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-31',
+    name: 'Sambalpuri Ikat Artisan Handloom Saree',
+    slug: 'sambalpuri-ikat-artisan-handloom-saree',
+    category: 'Handloom Sarees',
+    fabric: 'Pure Hand-Spun Silk-Cotton',
+    color: 'Terracotta & Black',
+    occasion: 'Festive Collections',
+    zariType: 'Traditional Bandha Woven Temple Border',
+    price: 6499,
+    originalPrice: 7999,
+    discountPercent: 19,
+    description: 'Authentic Sambalpuri double-ikat handloom saree woven by master weavers in Odisha, featuring intricate geometric bandha patterns, traditional floral motifs, and a rich narrative pallu.',
+    details: {
+      weave: 'Double Ikat Bandha Pit Loom Weave',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Matching handloom unstitched blouse piece',
+      weight: '560 grams',
+      origin: 'Bargarh, Odisha',
+      certification: 'GI Tagged & Handloom Mark India'
+    },
+    careInstructions: [
+      'Dry Clean recommended for initial washes',
+      'Gentle hand wash in cold water with mild detergent',
+      'Dry in shade'
+    ],
+    images: [
+      '/src/assets/images/product_handloom_sambalpuri_ikat.jpg'
+    ],
+    rating: 4.9,
+    reviewCount: 31,
+    inStock: true,
+    stockCount: 7,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-32',
+    name: 'Natural Tussar Ghicha Raw Silk Handloom Saree',
+    slug: 'natural-tussar-ghicha-raw-silk-handloom-saree',
+    category: 'Handloom Sarees',
+    fabric: '100% Organic Tussar Ghicha Silk',
+    color: 'Honey Beige & Maroon',
+    occasion: 'Festive Collections',
+    zariType: 'Earthy Hand-Woven Tribal Border',
+    price: 8499,
+    originalPrice: 10200,
+    discountPercent: 17,
+    description: 'Rich raw organic tussar ghicha silk saree with natural slub texture, framed by an earthy contrast maroon border with handcrafted tribal embroidery butis and an artisanal tassel pallu.',
+    details: {
+      weave: 'Hand-Spun Ghicha Tussar Pit Loom Weave',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Contrast maroon tussar silk blouse fabric',
+      weight: '620 grams',
+      origin: 'Bhagalpur, Bihar',
+      certification: 'Silk Mark & Handloom Mark Certified'
+    },
+    careInstructions: [
+      'Dry Clean only',
+      'Store wrapped in cotton muslin',
+      'Iron with damp press cloth on reverse'
+    ],
+    images: [
+      '/src/assets/images/product_handloom_tussar_ghicha.jpg'
+    ],
+    rating: 5.0,
+    reviewCount: 26,
+    inStock: true,
+    stockCount: 6,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-33',
+    name: 'Royal Indigo Pochampally Ikat Handloom Saree',
+    slug: 'royal-indigo-pochampally-ikat-handloom-saree',
+    category: 'Handloom Sarees',
+    fabric: 'Pure Handloom Silk',
+    color: 'Indigo Navy & Crimson',
+    occasion: 'Festive Collections',
+    zariType: 'Pure Silver & Gold Zari Selvedge',
+    price: 8999,
+    originalPrice: 10800,
+    discountPercent: 17,
+    description: 'Prestigious Pochampally Ikat handloom saree woven with tie-and-dye warp and weft yarns, showcasing geometric diamond grids in royal indigo navy and crimson with handcrafted zari selvedges.',
+    details: {
+      weave: 'Authentic Telia-Style Double Ikat Handloom Weave',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Indigo silk blouse piece with matching ikat sleeve border',
+      weight: '590 grams',
+      origin: 'Bhoodan Pochampally, Telangana',
+      certification: 'GI Tagged & Handloom Mark Certified'
+    },
+    careInstructions: [
+      'Dry Clean exclusively',
+      'Do not squeeze or wring',
+      'Iron on low silk setting on reverse'
+    ],
+    images: [
+      '/src/assets/images/product_handloom_pochampally_ikat.jpg'
+    ],
+    rating: 4.9,
+    reviewCount: 38,
+    inStock: true,
+    stockCount: 8,
+    isBestSeller: false,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-34',
+    name: 'Pastel Mint Emerald Kota Doria Handloom Saree',
+    slug: 'pastel-mint-emerald-kota-doria-handloom-saree',
+    category: 'Handloom Sarees',
+    fabric: 'Pure Kota Doria Silk-Cotton',
+    color: 'Pastel Sage Emerald',
+    occasion: 'Festive Collections',
+    zariType: 'Fine Tested Silver Zari Border & Khat Checks',
+    price: 5899,
+    originalPrice: 7200,
+    discountPercent: 18,
+    description: 'Featherlight and airy master artisan handloom saree featuring signature translucent square khat check weave in refreshing sage mint emerald, accentuated by delicate silver zari edging.',
+    details: {
+      weave: 'Traditional Pit Loom Khat Weave',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Artisanal handloom embroidered blouse fabric',
+      weight: '430 grams',
+      origin: 'Kota, Rajasthan',
+      certification: 'GI Tagged & Handloom Mark India'
+    },
+    careInstructions: [
+      'Dry Clean or gentle hand wash',
+      'Mild starching recommended',
+      'Steam iron with low temperature'
+    ],
+    images: [
+      '/src/assets/images/product_handloom_kota_doria.jpg'
+    ],
+    rating: 4.8,
+    reviewCount: 22,
     inStock: true,
     stockCount: 9,
     isBestSeller: true,

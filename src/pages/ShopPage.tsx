@@ -86,14 +86,9 @@ export const isCategoryMatch = (product: Product, categoryQuery: string): boolea
 
   // Handloom Sarees
   if (target.includes('handloom')) {
-    if (
-      product.category.toLowerCase().includes('handloom') ||
-      product.name.toLowerCase().includes('handloom') ||
-      product.details?.weave?.toLowerCase().includes('handloom') ||
-      product.details?.certification?.toLowerCase().includes('handloom')
-    ) {
-      return true;
-    }
+    return (
+      product.category.toLowerCase().includes('handloom')
+    );
   }
 
   // Party Wear Sarees
