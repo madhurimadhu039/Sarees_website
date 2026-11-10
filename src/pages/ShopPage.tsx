@@ -98,13 +98,10 @@ export const isCategoryMatch = (product: Product, categoryQuery: string): boolea
 
   // Party Wear Sarees
   if (target.includes('party')) {
-    if (
+    return (
       product.category.toLowerCase().includes('party') ||
-      product.occasion.toLowerCase().includes('party') ||
       product.name.toLowerCase().includes('party')
-    ) {
-      return true;
-    }
+    );
   }
 
   // Bridal & Wedding Sarees

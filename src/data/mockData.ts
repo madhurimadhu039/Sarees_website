@@ -38,8 +38,8 @@ export const INITIAL_CATEGORIES: Category[] = [
     name: 'Party Wear Sarees',
     slug: 'party-wear',
     subtitle: 'For Special Moments',
-    image: '/src/assets/images/product_banarasi_purple_1791712866730.jpg',
-    description: 'Contemporary silhouettes, rich jewel tones, and opulent metallic pallus.'
+    image: '/src/assets/images/product_party_champagne_shimmer.jpg',
+    description: 'Contemporary silhouettes, glamorous shimmer, and opulent metallic evening drapes.'
   },
   {
     id: 'cat-handloom',
@@ -305,24 +305,24 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-7',
-    name: 'Midnight Gold Party Wear Silk Saree',
-    slug: 'midnight-gold-party-wear-silk-saree',
+    name: 'Champagne Gold Shimmer Cocktail Party Saree',
+    slug: 'champagne-gold-shimmer-cocktail-party-saree',
     category: 'Party Wear Sarees',
-    fabric: 'Pure Katan Silk',
-    color: 'Royal Purple',
+    fabric: 'Metallic Shimmer Tissue & Satin',
+    color: 'Champagne Gold',
     occasion: 'Party Wear',
-    zariType: 'Antique Gold Zari & Sequin Pallu',
-    price: 7200,
-    originalPrice: 8900,
-    discountPercent: 19,
-    description: 'Designed for gala evenings and high-profile festivities, this midnight violet silk saree blends pure Katan silk with dazzling metallic gold zari motifs and a dramatic scalloped pallu.',
+    zariType: 'Micro-Sequin & Metallic Lurex Weave',
+    price: 7499,
+    originalPrice: 9200,
+    discountPercent: 18,
+    description: 'Designed for gala cocktail evenings and high-profile receptions, this luminous champagne gold shimmer party saree features subtle micro-sequin embellishments, delicate satin border piping, and a lightweight fluid drape.',
     details: {
-      weave: 'Contemporary Jacquard Silk Weave',
+      weave: 'Metallic Shimmer Lurex Weave with Satin Edging',
       length: '5.5 metres + 0.8 metre blouse piece',
-      blousePiece: 'Designer embroidered blouse fabric included',
-      weight: '720 grams',
-      origin: 'Varanasi, Uttar Pradesh',
-      certification: 'Silk Mark Certified 100% Pure Silk'
+      blousePiece: 'Designer sleeveless embroidered blouse fabric included',
+      weight: '520 grams',
+      origin: 'Mumbai, Maharashtra',
+      certification: 'Craftmark Verified Luxury Evening Wear'
     },
     careInstructions: [
       'Dry Clean only',
@@ -330,11 +330,10 @@ export const INITIAL_PRODUCTS: Product[] = [
       'Low heat iron on reverse side'
     ],
     images: [
-      '/src/assets/images/product_banarasi_purple_1791712866730.jpg',
-      '/src/assets/images/banner_banarasi_pallu_1791712855920.jpg'
+      '/src/assets/images/product_party_champagne_shimmer.jpg'
     ],
     rating: 4.9,
-    reviewCount: 16,
+    reviewCount: 24,
     inStock: true,
     stockCount: 7,
     isBestSeller: true,
@@ -1030,6 +1029,154 @@ export const INITIAL_PRODUCTS: Product[] = [
     reviewCount: 41,
     inStock: true,
     stockCount: 6,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-27',
+    name: 'Emerald Green Glamour Sequin Party Saree',
+    slug: 'emerald-green-glamour-sequin-party-saree',
+    category: 'Party Wear Sarees',
+    fabric: 'Designer High-Twist Georgette',
+    color: 'Emerald Green',
+    occasion: 'Party Wear',
+    zariType: 'Tonal Micro-Sequins & Beadwork Border',
+    price: 6899,
+    originalPrice: 8500,
+    discountPercent: 19,
+    description: 'A showstopping emerald green designer georgette party wear saree covered in delicate tonal sequins and micro-bead embellishments with a contemporary fluid drape.',
+    details: {
+      weave: 'Hand-Embellished Sequin Jaal on Georgette',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Unstitched designer heavy sequin blouse piece included',
+      weight: '580 grams',
+      origin: 'Surat, Gujarat',
+      certification: 'Craftmark Verified Designer Wear'
+    },
+    careInstructions: [
+      'Dry Clean only',
+      'Store in muslin pouch',
+      'Steam iron on reverse with low heat'
+    ],
+    images: [
+      '/src/assets/images/product_party_emerald_sequin.jpg'
+    ],
+    rating: 4.9,
+    reviewCount: 29,
+    inStock: true,
+    stockCount: 8,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-28',
+    name: 'Rose Gold Metallic Scalloped Tissue Organza Party Saree',
+    slug: 'rose-gold-scalloped-tissue-organza-party-saree',
+    category: 'Party Wear Sarees',
+    fabric: 'Metallic Tissue Organza',
+    color: 'Rose Gold',
+    occasion: 'Party Wear',
+    zariType: 'Scalloped Cut-Work Crystal & Silver Zari Border',
+    price: 8299,
+    originalPrice: 9999,
+    discountPercent: 17,
+    description: 'Exquisite rose gold metallic tissue organza saree designed with delicate scalloped cut-work crystal borders and subtle luminescent sheen for high-fashion cocktails and reception soirees.',
+    details: {
+      weave: 'Fine Metallic Tissue Weft with Hand Cut-Work Edge',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Complementary raw silk embroidered blouse piece',
+      weight: '490 grams',
+      origin: 'Varanasi, Uttar Pradesh',
+      certification: 'Silk Mark Certified Tissue'
+    },
+    careInstructions: [
+      'Dry Clean only',
+      'Do not squeeze or wring',
+      'Press on low heat with press cloth'
+    ],
+    images: [
+      '/src/assets/images/product_party_rose_gold_tissue.jpg'
+    ],
+    rating: 5.0,
+    reviewCount: 33,
+    inStock: true,
+    stockCount: 5,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-29',
+    name: 'Wine Plum Ombre Satin Georgette Crystal Party Saree',
+    slug: 'wine-plum-ombre-satin-georgette-crystal-party-saree',
+    category: 'Party Wear Sarees',
+    fabric: 'Satin Finish Pure Georgette',
+    color: 'Wine Burgundy',
+    occasion: 'Party Wear',
+    zariType: 'Swarovski Crystal Border & Subtle Cutdana Work',
+    price: 7999,
+    originalPrice: 9600,
+    discountPercent: 17,
+    description: 'Modern ombre gradient saree transitioning seamlessly from rich wine to deep midnight plum on lustrous satin georgette, bordered with gleaming Swarovski crystal edging.',
+    details: {
+      weave: 'Hand-Dyed Ombre Dip Dye with Crystal Handwork',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Wine velvet embroidered blouse fabric included',
+      weight: '560 grams',
+      origin: 'Jaipur, Rajasthan',
+      certification: 'Artisanal Hand-Dye Verified'
+    },
+    careInstructions: [
+      'Dry Clean only',
+      'Store rolled in cloth bag',
+      'Low heat steam iron'
+    ],
+    images: [
+      '/src/assets/images/product_party_wine_ombre.jpg'
+    ],
+    rating: 4.8,
+    reviewCount: 21,
+    inStock: true,
+    stockCount: 7,
+    isBestSeller: false,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-30',
+    name: 'Midnight Black Starlight Sequin Cocktail Party Saree',
+    slug: 'midnight-black-starlight-sequin-cocktail-party-saree',
+    category: 'Party Wear Sarees',
+    fabric: 'Flowing Featherweight Georgette',
+    color: 'Midnight Black',
+    occasion: 'Party Wear',
+    zariType: 'Celestial Starlight Micro-Sequins & Metallic Piping',
+    price: 7199,
+    originalPrice: 8800,
+    discountPercent: 18,
+    description: 'A sleek, glamorous statement cocktail saree in jet black drenched in delicate micro-sequins resembling a midnight sky. Complemented by sleek metallic piping and featherlight drape.',
+    details: {
+      weave: 'All-Over Scattered Starlight Sequin Embroidery',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Designer halter-neck embroidered blouse fabric',
+      weight: '530 grams',
+      origin: 'Surat, Gujarat',
+      certification: 'High-Grade Tested Evening Georgette'
+    },
+    careInstructions: [
+      'Dry Clean exclusively',
+      'Store flat wrapped in cotton muslin',
+      'Iron on reverse with cloth layer'
+    ],
+    images: [
+      '/src/assets/images/product_party_black_sequin.jpg'
+    ],
+    rating: 5.0,
+    reviewCount: 47,
+    inStock: true,
+    stockCount: 9,
     isBestSeller: true,
     isFeatured: true,
     isNewArrival: true
