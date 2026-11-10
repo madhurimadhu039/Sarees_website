@@ -171,8 +171,10 @@ function MainApp() {
         )}
       </main>
 
-      {/* Footer Bar */}
-      <Footer onNavigate={navigateTo} />
+      {/* Footer Bar - Landing page only */}
+      {currentView === 'home' && (
+        <Footer onNavigate={navigateTo} />
+      )}
 
       {/* Slide-out Cart Drawer */}
       <CartDrawer
