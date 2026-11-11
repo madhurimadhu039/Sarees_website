@@ -97,15 +97,10 @@ export const isCategoryMatch = (product: Product, categoryQuery: string): boolea
 
   // Bridal & Wedding Sarees
   if (target.includes('bridal') || target.includes('wedding')) {
-    if (
+    return (
       product.category.toLowerCase().includes('bridal') ||
-      product.category.toLowerCase().includes('wedding') ||
-      product.occasion.toLowerCase().includes('bridal') ||
-      product.occasion.toLowerCase().includes('wedding') ||
-      product.name.toLowerCase().includes('bridal')
-    ) {
-      return true;
-    }
+      product.category.toLowerCase().includes('wedding')
+    );
   }
 
   return false;

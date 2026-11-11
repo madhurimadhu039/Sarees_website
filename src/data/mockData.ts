@@ -62,7 +62,7 @@ export const INITIAL_CATEGORIES: Category[] = [
     name: 'Bridal & Wedding',
     slug: 'bridal-wedding',
     subtitle: 'Sacred Splendour',
-    image: '/src/assets/images/hero_saree_model_1791712828037.jpg',
+    image: '/src/assets/images/product_silk_rani_pink.jpg',
     description: 'Heirloom trousseau sarees meant to be cherished across generations.'
   }
 ];
@@ -339,23 +339,23 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-8',
-    name: 'Royal Red Bridal Trousseau Kanjivaram',
-    slug: 'royal-red-bridal-trousseau-kanjivaram',
+    name: 'Rani Magenta Gold Zari Bridal Trousseau Saree',
+    slug: 'rani-magenta-gold-zari-bridal-trousseau-saree',
     category: 'Bridal & Wedding',
-    fabric: 'Pure Mulberry Silk',
-    color: 'Crimson Red',
+    fabric: 'Pure Mulberry Bridal Silk',
+    color: 'Rani Magenta & Gold',
     occasion: 'Bridal & Wedding',
-    zariType: 'Pure Gold & Silver Electroplated Zari',
+    zariType: 'Pure Antique Gold Zari Bridal Border',
     price: 16500,
     originalPrice: 19999,
     discountPercent: 17,
-    description: 'The crowning jewel of any bridal trousseau. Handcrafted with traditional Korvai temple borders, sacred swan and peacock motifs, and a resplendent solid gold zari pallu.',
+    description: 'The crowning jewel of any bridal trousseau. Handcrafted in vibrant Rani magenta pure silk with luminous solid gold zari floral motifs, grand woven temple border, and a rich heirloom bridal pallu.',
     details: {
-      weave: 'Three-Shuttle Korvai Handloom',
+      weave: 'Heirloom Bridal Gold Zari Brocade',
       length: '5.5 metres + 0.8 metre blouse piece',
-      blousePiece: 'Heavy brocade blouse piece included',
+      blousePiece: 'Heavy bridal brocade blouse piece included',
       weight: '990 grams',
-      origin: 'Kanchipuram, Tamil Nadu',
+      origin: 'South Asian Bridal Craft Guild',
       certification: 'GI Tagged & Silk Mark Certified'
     },
     careInstructions: [
@@ -364,8 +364,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       'Protect from direct sunlight and perfume'
     ],
     images: [
-      '/src/assets/images/hero_saree_model_1791712828037.jpg',
-      '/src/assets/images/product_kanjivaram_red_1791712939874.jpg'
+      '/src/assets/images/product_silk_rani_pink.jpg'
     ],
     rating: 5.0,
     reviewCount: 38,
@@ -1433,6 +1432,117 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     stockCount: 6,
     isBestSeller: false,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-38',
+    name: 'Golden Muhurtham & Vermilion Temple Bridal Saree',
+    slug: 'golden-muhurtham-vermilion-temple-bridal-saree',
+    category: 'Bridal & Wedding',
+    fabric: 'Pure Assamese Wedding Muga Silk',
+    color: 'Champagne Gold & Vermilion Red',
+    occasion: 'Bridal & Wedding',
+    zariType: 'Vermilion Temple Motif & Heritage Gold Pallu',
+    price: 18500,
+    originalPrice: 22000,
+    discountPercent: 16,
+    description: 'A luminous golden bridal ceremony saree framed with auspicious sindoor vermilion woven floral temple borders and intricate traditional geometric diamond motifs across an ornate bridal pallu.',
+    details: {
+      weave: 'Ceremonial Heirloom Wedding Weave',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Matching gold silk blouse piece with temple sleeve border',
+      weight: '860 grams',
+      origin: 'Sualkuchi Bridal Atelier, Assam',
+      certification: 'Silk Mark Certified Pure Muga Silk'
+    },
+    careInstructions: [
+      'Dry Clean only',
+      'Store wrapped in unbleached cotton muslin',
+      'Refold periodically along alternate creases'
+    ],
+    images: [
+      '/src/assets/images/product_silk_honey_muga.jpg'
+    ],
+    rating: 5.0,
+    reviewCount: 31,
+    inStock: true,
+    stockCount: 5,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-39',
+    name: 'Haldi Ceremony Saffron Gold Zari Wedding Saree',
+    slug: 'haldi-ceremony-saffron-gold-zari-wedding-saree',
+    category: 'Bridal & Wedding',
+    fabric: 'Pure Woven Gold Zari Tissue',
+    color: 'Saffron Mustard Gold',
+    occasion: 'Bridal & Wedding',
+    zariType: 'Tested Silver & Gold Buti Wedding Border',
+    price: 13200,
+    originalPrice: 15800,
+    discountPercent: 16,
+    description: 'Crafted specially for sacred Haldi ceremonies and pre-wedding festivities, this radiant saffron-gold wedding saree shimmers with delicate handwoven zari butis and an opulent paisley bridal pallu.',
+    details: {
+      weave: 'Intricate Paisleys & Gold Zari Brocade',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Matching golden silk unstitched blouse piece',
+      weight: '690 grams',
+      origin: 'Malwa Bridal Heritage Atelier',
+      certification: 'Silk Mark Certified Bridal Collection'
+    },
+    careInstructions: [
+      'Strictly Dry Clean only',
+      'Keep away from direct moisture prior to wrapping',
+      'Iron on reverse at low heat'
+    ],
+    images: [
+      '/src/assets/images/product_silk_mustard_chanderi.jpg'
+    ],
+    rating: 4.9,
+    reviewCount: 27,
+    inStock: true,
+    stockCount: 6,
+    isBestSeller: false,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-40',
+    name: 'Peacock Teal Kalamkari Zari Bridal Reception Saree',
+    slug: 'peacock-teal-kalamkari-zari-bridal-reception-saree',
+    category: 'Bridal & Wedding',
+    fabric: 'Pure Tussar & Zari Blend',
+    color: 'Peacock Teal & Antique Gold',
+    occasion: 'Bridal & Wedding',
+    zariType: 'Handcrafted Kalamkari Vine & Peacock Gold Border',
+    price: 15400,
+    originalPrice: 18500,
+    discountPercent: 17,
+    description: 'A dramatic bridal sangeet and wedding reception drape in deep peacock teal, adorned with intricate antique gold kalamkari botanical creepers, sculpted peacock motifs, and a sweeping heirloom pallu.',
+    details: {
+      weave: 'Artisanal Wedding Zari Kalamkari Weave',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Teal raw silk blouse piece with embroidered sleeves',
+      weight: '740 grams',
+      origin: 'Deccan Bridal Craft Atelier',
+      certification: 'Craftmark & Silk Mark Verified'
+    },
+    careInstructions: [
+      'Dry Clean exclusively',
+      'Store flat wrapped in breathable muslin cloth',
+      'Avoid direct contact with perfume sprays'
+    ],
+    images: [
+      '/src/assets/images/product_silk_teal_tussar.jpg'
+    ],
+    rating: 4.9,
+    reviewCount: 35,
+    inStock: true,
+    stockCount: 4,
+    isBestSeller: true,
     isFeatured: true,
     isNewArrival: true
   }
