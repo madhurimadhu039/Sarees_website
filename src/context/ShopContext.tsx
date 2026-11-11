@@ -79,7 +79,7 @@ export const ShopProvider: React.FC<{ children: React.ReactNode }> = ({ children
   // Products
   const [products, setProducts] = useState<Product[]>(() => {
     try {
-      const saved = localStorage.getItem('sareaura_products_v10');
+      const saved = localStorage.getItem('sareaura_products_v11');
       if (saved) {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed) && parsed.length >= INITIAL_PRODUCTS.length) {
@@ -155,7 +155,7 @@ export const ShopProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   // LocalStorage sync
   useEffect(() => {
-    localStorage.setItem('sareaura_products_v10', JSON.stringify(products));
+    localStorage.setItem('sareaura_products_v11', JSON.stringify(products));
   }, [products]);
 
   useEffect(() => {

@@ -45,14 +45,10 @@ export const isCategoryMatch = (product: Product, categoryQuery: string): boolea
 
   // Banarasi Sarees
   if (target.includes('banarasi')) {
-    if (
+    return (
       product.category.toLowerCase().includes('banarasi') ||
-      product.name.toLowerCase().includes('banarasi') ||
-      product.details?.weave?.toLowerCase().includes('varanasi') ||
-      product.details?.origin?.toLowerCase().includes('varanasi')
-    ) {
-      return true;
-    }
+      product.name.toLowerCase().includes('banarasi')
+    );
   }
 
   // Kanjivaram Sarees

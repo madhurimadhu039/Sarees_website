@@ -54,7 +54,7 @@ export const INITIAL_CATEGORIES: Category[] = [
     name: 'Banarasi Sarees',
     slug: 'banarasi-sarees',
     subtitle: 'Rich Heritage',
-    image: '/src/assets/images/banner_banarasi_pallu_1791712855920.jpg',
+    image: '/src/assets/images/product_banarasi_crimson_bridal.jpg',
     description: 'Varanasi brocade silks with regal floral jaal and meenakari motifs.'
   },
   {
@@ -97,8 +97,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ],
     images: [
       '/src/assets/images/product_banarasi_purple_1791712866730.jpg',
-      '/src/assets/images/banner_banarasi_pallu_1791712855920.jpg',
-      '/src/assets/images/hero_saree_model_1791712828037.jpg'
+      '/src/assets/images/banner_banarasi_pallu_1791712855920.jpg'
     ],
     rating: 4.9,
     reviewCount: 24,
@@ -139,7 +138,6 @@ export const INITIAL_PRODUCTS: Product[] = [
       'Steam iron only on delicate fabric setting'
     ],
     images: [
-      '/src/assets/images/product_silk_emerald_banarasi.jpg',
       '/src/assets/images/product_meenakari_green_1791712880156.jpg'
     ],
     rating: 4.8,
@@ -382,14 +380,14 @@ export const INITIAL_PRODUCTS: Product[] = [
     name: 'Kashi Gold Brocade Banarasi Saree',
     slug: 'kashi-gold-brocade-banarasi-saree',
     category: 'Banarasi Sarees',
-    fabric: 'Pure Katan Silk',
-    color: 'Emerald Green',
+    fabric: 'Pure Katan Tissue Silk',
+    color: 'Antique Gold & Emerald',
     occasion: 'Festive Collections',
     zariType: 'Regal Golden Zari Kadwa Brocade',
     price: 9200,
     originalPrice: 11500,
     discountPercent: 20,
-    description: 'A masterpiece from the heritage looms of Kashi, featuring intricate botanical bel motifs in genuine golden zari on deep emerald silk. Comes with a matching brocade blouse piece.',
+    description: 'A masterpiece from the heritage looms of Kashi, featuring lustrous antique gold tissue brocade woven with golden lotus motifs and framed by a contrasting deep emerald green zari border.',
     details: {
       weave: 'Varanasi Kadwa Brocade',
       length: '5.5 metres + 0.8 metre blouse piece',
@@ -403,8 +401,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       'Store in muslin pouch'
     ],
     images: [
-      '/src/assets/images/product_silk_emerald_banarasi.jpg',
-      '/src/assets/images/product_meenakari_green_1791712880156.jpg'
+      '/src/assets/images/product_banarasi_golden_emerald.jpg'
     ],
     rating: 4.8,
     reviewCount: 19,
@@ -1325,6 +1322,117 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     stockCount: 9,
     isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-35',
+    name: 'Crimson Vermilion Jangla Gold Zari Banarasi Saree',
+    slug: 'crimson-vermilion-jangla-gold-zari-banarasi-saree',
+    category: 'Banarasi Sarees',
+    fabric: 'Pure Katan Silk',
+    color: 'Crimson Red',
+    occasion: 'Bridal & Wedding',
+    zariType: 'Authentic Tested Gold Zari Jangla Brocade',
+    price: 13800,
+    originalPrice: 16500,
+    discountPercent: 16,
+    description: 'An heirloom crimson vermilion pure Katan silk Banarasi saree richly handwoven with intricate gold zari Jangla floral creeper motifs throughout the drape and an opulent traditional Banarasi pallu.',
+    details: {
+      weave: 'Varanasi Handwoven Kadwa Jangla Brocade',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Matching crimson brocade silk blouse fabric included',
+      weight: '890 grams',
+      origin: 'Varanasi, Uttar Pradesh',
+      certification: 'Silk Mark Certified 100% Pure Silk'
+    },
+    careInstructions: [
+      'Strictly Dry Clean only',
+      'Wrap in soft unbleached muslin cloth',
+      'Iron on reverse side using low heat'
+    ],
+    images: [
+      '/src/assets/images/product_banarasi_crimson_bridal.jpg'
+    ],
+    rating: 5.0,
+    reviewCount: 42,
+    inStock: true,
+    stockCount: 5,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-36',
+    name: 'Royal Sapphire Blue Meenakari Jaal Banarasi Saree',
+    slug: 'royal-sapphire-blue-meenakari-jaal-banarasi-saree',
+    category: 'Banarasi Sarees',
+    fabric: 'Pure Katan Silk',
+    color: 'Royal Sapphire Blue',
+    occasion: 'Festive Collections',
+    zariType: 'Antique Silver-Gold Zari & Multi-Hued Meenakari',
+    price: 11200,
+    originalPrice: 13400,
+    discountPercent: 16,
+    description: 'Draped in regal sapphire blue, this pure Katan silk Banarasi saree showcases a delicate silver and antique gold floral jaal finished with artisan colorful Meenakari lotus motifs along the border and pallu.',
+    details: {
+      weave: 'Varanasi Meenakari Kadwa Handloom',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Royal blue zari border unstitched blouse piece',
+      weight: '830 grams',
+      origin: 'Varanasi, Uttar Pradesh',
+      certification: 'Silk Mark & Handloom Mark Certified'
+    },
+    careInstructions: [
+      'Dry Clean only',
+      'Store flat in dry muslin pouch',
+      'Steam iron gently on reverse side'
+    ],
+    images: [
+      '/src/assets/images/product_banarasi_royal_blue_zari.jpg'
+    ],
+    rating: 4.9,
+    reviewCount: 34,
+    inStock: true,
+    stockCount: 7,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-37',
+    name: 'Pearl Ivory Kora Silk Organza Zari Banarasi Saree',
+    slug: 'pearl-ivory-kora-silk-organza-zari-banarasi-saree',
+    category: 'Banarasi Sarees',
+    fabric: 'Pure Kora Silk Organza',
+    color: 'Pearl Ivory & Gold',
+    occasion: 'Festive Collections',
+    zariType: 'Fine Antique Gold Zari Butis & Scalloped Border',
+    price: 9600,
+    originalPrice: 11500,
+    discountPercent: 17,
+    description: 'Light as gossamer yet steeped in royal Banarasi craft, this pearl ivory Kora silk organza saree features handwoven antique gold floral butis, traditional Varanasi konia corners, and an intricate scalloped gold zari edge.',
+    details: {
+      weave: 'Handwoven Kora Cutwork & Scalloped Zari',
+      length: '5.5 metres + 0.8 metre blouse piece',
+      blousePiece: 'Matching gold brocade silk blouse fabric included',
+      weight: '460 grams',
+      origin: 'Varanasi, Uttar Pradesh',
+      certification: 'Silk Mark Certified Pure Silk Organza'
+    },
+    careInstructions: [
+      'Dry Clean exclusively',
+      'Store rolled on padded hanger or flat in muslin',
+      'Low heat press through thin cotton cloth'
+    ],
+    images: [
+      '/src/assets/images/product_banarasi_ivory_organza.jpg'
+    ],
+    rating: 4.9,
+    reviewCount: 28,
+    inStock: true,
+    stockCount: 6,
+    isBestSeller: false,
     isFeatured: true,
     isNewArrival: true
   }
