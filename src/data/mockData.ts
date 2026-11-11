@@ -1437,24 +1437,24 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-38',
-    name: 'Golden Muhurtham & Vermilion Temple Bridal Saree',
-    slug: 'golden-muhurtham-vermilion-temple-bridal-saree',
+    name: 'Royal Sindoor Crimson Gold Zari Bridal Silk Saree',
+    slug: 'royal-sindoor-crimson-gold-zari-bridal-silk-saree',
     category: 'Bridal & Wedding',
-    fabric: 'Pure Assamese Wedding Muga Silk',
-    color: 'Champagne Gold & Vermilion Red',
+    fabric: 'Pure Bishnupuri Bridal Silk',
+    color: 'Sindoor Crimson & Antique Gold',
     occasion: 'Bridal & Wedding',
-    zariType: 'Vermilion Temple Motif & Heritage Gold Pallu',
-    price: 18500,
-    originalPrice: 22000,
-    discountPercent: 16,
-    description: 'A luminous golden bridal ceremony saree framed with auspicious sindoor vermilion woven floral temple borders and intricate traditional geometric diamond motifs across an ornate bridal pallu.',
+    zariType: 'Heavy Antique Gold Brocade & Bridal Pallu',
+    price: 21500,
+    originalPrice: 25900,
+    discountPercent: 17,
+    description: 'An opulent heirloom sindoor-crimson wedding saree richly woven with dense antique gold metallic motifs, regal ceremonial borders, and a grand bridal veil drape crafted for the sacred mandap ceremony.',
     details: {
-      weave: 'Ceremonial Heirloom Wedding Weave',
-      length: '5.5 metres + 0.8 metre blouse piece',
-      blousePiece: 'Matching gold silk blouse piece with temple sleeve border',
-      weight: '860 grams',
-      origin: 'Sualkuchi Bridal Atelier, Assam',
-      certification: 'Silk Mark Certified Pure Muga Silk'
+      weave: 'Heavy Ceremonial Gold Brocade Weave',
+      length: '5.5 metres + 0.9 metre bridal blouse piece',
+      blousePiece: 'Heavy gold zari crimson silk unstitched blouse piece',
+      weight: '920 grams',
+      origin: 'Bishnupur Bridal Atelier, West Bengal',
+      certification: 'Silk Mark Certified Heirloom Bridal Collection'
     },
     careInstructions: [
       'Dry Clean only',
@@ -1462,73 +1462,73 @@ export const INITIAL_PRODUCTS: Product[] = [
       'Refold periodically along alternate creases'
     ],
     images: [
-      '/src/assets/images/product_silk_honey_muga.jpg'
+      '/src/assets/images/product_bridal_crimson_bengali_zari.jpg'
     ],
     rating: 5.0,
-    reviewCount: 31,
+    reviewCount: 42,
     inStock: true,
-    stockCount: 5,
+    stockCount: 4,
     isBestSeller: true,
     isFeatured: true,
     isNewArrival: true
   },
   {
     id: 'prod-39',
-    name: 'Haldi Ceremony Saffron Gold Zari Wedding Saree',
-    slug: 'haldi-ceremony-saffron-gold-zari-wedding-saree',
+    name: 'Maharani Scarlet Velvet-Trim Zardozi Bridal Saree',
+    slug: 'maharani-scarlet-velvet-trim-zardozi-bridal-saree',
     category: 'Bridal & Wedding',
-    fabric: 'Pure Woven Gold Zari Tissue',
-    color: 'Saffron Mustard Gold',
+    fabric: 'Pure Katan Mulberry Wedding Silk',
+    color: 'Scarlet Vermilion & Burnished Gold',
     occasion: 'Bridal & Wedding',
-    zariType: 'Tested Silver & Gold Buti Wedding Border',
-    price: 13200,
-    originalPrice: 15800,
+    zariType: 'Intricate Zardozi Dabka & Resham Border',
+    price: 24800,
+    originalPrice: 29500,
     discountPercent: 16,
-    description: 'Crafted specially for sacred Haldi ceremonies and pre-wedding festivities, this radiant saffron-gold wedding saree shimmers with delicate handwoven zari butis and an opulent paisley bridal pallu.',
+    description: 'Adorned with heirloom hand-embroidered gold zardozi medallions, resham floral vines, and plush scalloped bridal borders, this regal scarlet wedding saree commands presence at pheras and grand evening receptions.',
     details: {
-      weave: 'Intricate Paisleys & Gold Zari Brocade',
-      length: '5.5 metres + 0.8 metre blouse piece',
-      blousePiece: 'Matching golden silk unstitched blouse piece',
-      weight: '690 grams',
-      origin: 'Malwa Bridal Heritage Atelier',
-      certification: 'Silk Mark Certified Bridal Collection'
+      weave: 'Hand-Embroidered Zardozi & Ceremonial Satin Silk',
+      length: '5.5 metres + 0.9 metre bridal blouse piece',
+      blousePiece: 'Matching embroidered scarlet silk bridal blouse piece',
+      weight: '980 grams',
+      origin: 'Jaipur & Lucknow Zardozi Bridal Atelier',
+      certification: 'Silk Mark & Handcrafted Zardozi Certified'
     },
     careInstructions: [
       'Strictly Dry Clean only',
-      'Keep away from direct moisture prior to wrapping',
-      'Iron on reverse at low heat'
+      'Store flat folded in tissue with silica gel away from humidity',
+      'Steam lightly on reverse side'
     ],
     images: [
-      '/src/assets/images/product_silk_mustard_chanderi.jpg'
+      '/src/assets/images/product_bridal_scarlet_zardozi.jpg'
     ],
-    rating: 4.9,
-    reviewCount: 27,
+    rating: 5.0,
+    reviewCount: 38,
     inStock: true,
-    stockCount: 6,
-    isBestSeller: false,
+    stockCount: 3,
+    isBestSeller: true,
     isFeatured: true,
     isNewArrival: true
   },
   {
     id: 'prod-40',
-    name: 'Peacock Teal Kalamkari Zari Bridal Reception Saree',
-    slug: 'peacock-teal-kalamkari-zari-bridal-reception-saree',
+    name: 'Gulabi Rose Zari & Pearl-Trim Bridal Trousseau Saree',
+    slug: 'gulabi-rose-zari-pearl-trim-bridal-trousseau-saree',
     category: 'Bridal & Wedding',
-    fabric: 'Pure Tussar & Zari Blend',
-    color: 'Peacock Teal & Antique Gold',
+    fabric: 'Pure Crushed Raw Silk & Zari Pallu',
+    color: 'Deep Rose Magenta & Antique Gold',
     occasion: 'Bridal & Wedding',
-    zariType: 'Handcrafted Kalamkari Vine & Peacock Gold Border',
-    price: 15400,
-    originalPrice: 18500,
-    discountPercent: 17,
-    description: 'A dramatic bridal sangeet and wedding reception drape in deep peacock teal, adorned with intricate antique gold kalamkari botanical creepers, sculpted peacock motifs, and a sweeping heirloom pallu.',
+    zariType: 'Ornate Gota Patti, Zari & Pearl-Edged Veil',
+    price: 19800,
+    originalPrice: 23500,
+    discountPercent: 16,
+    description: 'Tailored for royal sangeet nights and the bride’s grand phera entry, this jewel-toned deep rose-magenta trousseau saree pairs shimmering gold floral embroidery with pearl-tasseled scallop trims.',
     details: {
-      weave: 'Artisanal Wedding Zari Kalamkari Weave',
-      length: '5.5 metres + 0.8 metre blouse piece',
-      blousePiece: 'Teal raw silk blouse piece with embroidered sleeves',
-      weight: '740 grams',
-      origin: 'Deccan Bridal Craft Atelier',
-      certification: 'Craftmark & Silk Mark Verified'
+      weave: 'Heavy Ceremonial Embroidered Silk',
+      length: '5.5 metres + 0.9 metre blouse piece + matching bridal trim',
+      blousePiece: 'Rose-magenta zardozi accented silk blouse piece',
+      weight: '890 grams',
+      origin: 'Jodhpur Royal Trousseau Atelier, Rajasthan',
+      certification: 'Silk Mark Certified Bridal Trousseau'
     },
     careInstructions: [
       'Dry Clean exclusively',
@@ -1536,7 +1536,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       'Avoid direct contact with perfume sprays'
     ],
     images: [
-      '/src/assets/images/product_silk_teal_tussar.jpg'
+      '/src/assets/images/product_bridal_magenta_gold_trousseau.jpg'
     ],
     rating: 4.9,
     reviewCount: 35,
