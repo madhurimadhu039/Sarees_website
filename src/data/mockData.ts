@@ -1437,35 +1437,72 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'prod-38',
-    name: 'Royal Sindoor Crimson Gold Zari Bridal Silk Saree',
-    slug: 'royal-sindoor-crimson-gold-zari-bridal-silk-saree',
+    name: 'Deep Ceremonial Crimson Red Gold Jaal Bridal Saree',
+    slug: 'deep-ceremonial-crimson-red-gold-jaal-bridal-saree',
     category: 'Bridal & Wedding',
-    fabric: 'Pure Bishnupuri Bridal Silk',
-    color: 'Sindoor Crimson & Antique Gold',
+    fabric: 'Pure Mulberry Bridal Silk',
+    color: 'Crimson Red & Antique Gold',
     occasion: 'Bridal & Wedding',
-    zariType: 'Heavy Antique Gold Brocade & Bridal Pallu',
-    price: 21500,
-    originalPrice: 25900,
+    zariType: 'Heavy Antique Gold Floral Jaal Brocade & Bridal Pallu',
+    price: 26500,
+    originalPrice: 32000,
     discountPercent: 17,
-    description: 'An opulent heirloom sindoor-crimson wedding saree richly woven with dense antique gold metallic motifs, regal ceremonial borders, and a grand bridal veil drape crafted for the sacred mandap ceremony.',
+    description: 'An iconic ceremonial crimson bridal saree richly embellished with dense antique gold floral jaal brocade, broad heirloom borders, and a magnificent sweeping bridal pallu tailored for the sacred mandap.',
     details: {
-      weave: 'Heavy Ceremonial Gold Brocade Weave',
+      weave: 'Grand Ceremonial Gold Jaal Brocade Weave',
       length: '5.5 metres + 0.9 metre bridal blouse piece',
-      blousePiece: 'Heavy gold zari crimson silk unstitched blouse piece',
-      weight: '920 grams',
-      origin: 'Bishnupur Bridal Atelier, West Bengal',
+      blousePiece: 'Heavy gold brocade crimson silk unstitched blouse piece',
+      weight: '980 grams',
+      origin: 'Bishnupur Royal Atelier, West Bengal',
       certification: 'Silk Mark Certified Heirloom Bridal Collection'
     },
     careInstructions: [
-      'Dry Clean only',
-      'Store wrapped in unbleached cotton muslin',
+      'Strictly Dry Clean only',
+      'Store wrapped in unbleached cotton muslin cloth',
       'Refold periodically along alternate creases'
     ],
     images: [
-      '/src/assets/images/product_bridal_crimson_bengali_zari.jpg'
+      '/src/assets/images/product_bridal_deep_crimson.jpg'
     ],
     rating: 5.0,
-    reviewCount: 42,
+    reviewCount: 46,
+    inStock: true,
+    stockCount: 5,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-39',
+    name: 'Molten Antique Gold Tissue Muhurtham Bridal Saree',
+    slug: 'molten-antique-gold-tissue-muhurtham-bridal-saree',
+    category: 'Bridal & Wedding',
+    fabric: 'Pure Molten Metallic Silk Tissue',
+    color: 'Molten Antique Gold & Crimson Red',
+    occasion: 'Bridal & Wedding',
+    zariType: 'Heavy Temple Crimson & Gold Zari Border',
+    price: 28900,
+    originalPrice: 34500,
+    discountPercent: 16,
+    description: 'A breathtaking South Indian muhurtham bridal masterpiece woven in shimmering molten antique gold silk tissue, framed with contrasting crimson red temple motifs and a grand ceremonial wedding border.',
+    details: {
+      weave: 'Pure Metallic Tissue Muhurtham Weave',
+      length: '5.5 metres + 0.9 metre bridal blouse piece',
+      blousePiece: 'Contrasting crimson silk blouse piece with heavy gold sleeve border',
+      weight: '1020 grams',
+      origin: 'Dharmavaram Temple Silk Atelier, Andhra Pradesh',
+      certification: 'Silk Mark & Handloom Heritage Certified'
+    },
+    careInstructions: [
+      'Strictly Dry Clean only',
+      'Keep away from humidity and direct moisture',
+      'Steam lightly on reverse side'
+    ],
+    images: [
+      '/src/assets/images/product_bridal_gold_tissue.jpg'
+    ],
+    rating: 5.0,
+    reviewCount: 52,
     inStock: true,
     stockCount: 4,
     isBestSeller: true,
@@ -1473,36 +1510,36 @@ export const INITIAL_PRODUCTS: Product[] = [
     isNewArrival: true
   },
   {
-    id: 'prod-39',
-    name: 'Maharani Scarlet Velvet-Trim Zardozi Bridal Saree',
-    slug: 'maharani-scarlet-velvet-trim-zardozi-bridal-saree',
+    id: 'prod-40',
+    name: 'Royal Maroon & Velvet Zardozi Bridal Trousseau Saree',
+    slug: 'royal-maroon-velvet-zardozi-bridal-trousseau-saree',
     category: 'Bridal & Wedding',
-    fabric: 'Pure Katan Mulberry Wedding Silk',
-    color: 'Scarlet Vermilion & Burnished Gold',
+    fabric: 'Pure Mulberry Silk & Matching Sheer Bridal Veil',
+    color: 'Royal Maroon & Burnished Gold',
     occasion: 'Bridal & Wedding',
-    zariType: 'Intricate Zardozi Dabka & Resham Border',
-    price: 24800,
-    originalPrice: 29500,
+    zariType: 'Handcrafted Antique Gold Gota Patti & Zardozi Border',
+    price: 29500,
+    originalPrice: 35000,
     discountPercent: 16,
-    description: 'Adorned with heirloom hand-embroidered gold zardozi medallions, resham floral vines, and plush scalloped bridal borders, this regal scarlet wedding saree commands presence at pheras and grand evening receptions.',
+    description: 'An heirloom bridal trousseau saree in deep royal maroon silk, hand-embroidered with dense gold dabka, zardozi medallions, and accompanied by a sheer matching embroidered bridal veil for the phera ceremony.',
     details: {
-      weave: 'Hand-Embroidered Zardozi & Ceremonial Satin Silk',
-      length: '5.5 metres + 0.9 metre bridal blouse piece',
-      blousePiece: 'Matching embroidered scarlet silk bridal blouse piece',
-      weight: '980 grams',
-      origin: 'Jaipur & Lucknow Zardozi Bridal Atelier',
+      weave: 'Artisanal Zardozi & Hand-Embroidered Silk Weave',
+      length: '5.5 metres + 0.9 metre blouse piece + matching bridal veil',
+      blousePiece: 'Maroon raw silk blouse piece with heavy zardozi sleeve work',
+      weight: '1050 grams',
+      origin: 'Lucknow & Jaipur Royal Trousseau Atelier',
       certification: 'Silk Mark & Handcrafted Zardozi Certified'
     },
     careInstructions: [
-      'Strictly Dry Clean only',
-      'Store flat folded in tissue with silica gel away from humidity',
-      'Steam lightly on reverse side'
+      'Dry Clean exclusively',
+      'Store flat wrapped in breathable muslin cloth with silica gel',
+      'Avoid direct contact with perfume sprays'
     ],
     images: [
-      '/src/assets/images/product_bridal_scarlet_zardozi.jpg'
+      '/src/assets/images/product_bridal_royal_maroon.jpg'
     ],
     rating: 5.0,
-    reviewCount: 38,
+    reviewCount: 39,
     inStock: true,
     stockCount: 3,
     isBestSeller: true,
@@ -1510,38 +1547,149 @@ export const INITIAL_PRODUCTS: Product[] = [
     isNewArrival: true
   },
   {
-    id: 'prod-40',
-    name: 'Gulabi Rose Zari & Pearl-Trim Bridal Trousseau Saree',
-    slug: 'gulabi-rose-zari-pearl-trim-bridal-trousseau-saree',
+    id: 'prod-41',
+    name: 'Royal Emerald Green Scalloped Zardozi Bridal Saree',
+    slug: 'royal-emerald-green-scalloped-zardozi-bridal-saree',
     category: 'Bridal & Wedding',
-    fabric: 'Pure Crushed Raw Silk & Zari Pallu',
-    color: 'Deep Rose Magenta & Antique Gold',
+    fabric: 'Pure Satin Mulberry Wedding Silk',
+    color: 'Royal Emerald Green & Antique Gold',
     occasion: 'Bridal & Wedding',
-    zariType: 'Ornate Gota Patti, Zari & Pearl-Edged Veil',
-    price: 19800,
-    originalPrice: 23500,
+    zariType: 'Scalloped Dabka, Resham & Gold Zardozi Border',
+    price: 27800,
+    originalPrice: 33000,
     discountPercent: 16,
-    description: 'Tailored for royal sangeet nights and the bride’s grand phera entry, this jewel-toned deep rose-magenta trousseau saree pairs shimmering gold floral embroidery with pearl-tasseled scallop trims.',
+    description: 'A regal jewel-toned emerald green bridal masterpiece adorned with all-over intricate gold floral vines, dabka embroidery, and plush scalloped zardozi borders crafted for royal sangeet and reception nights.',
     details: {
-      weave: 'Heavy Ceremonial Embroidered Silk',
-      length: '5.5 metres + 0.9 metre blouse piece + matching bridal trim',
-      blousePiece: 'Rose-magenta zardozi accented silk blouse piece',
-      weight: '890 grams',
-      origin: 'Jodhpur Royal Trousseau Atelier, Rajasthan',
-      certification: 'Silk Mark Certified Bridal Trousseau'
+      weave: 'Intricate Hand-Embroidered Zardozi & Satin Silk Weave',
+      length: '5.5 metres + 0.9 metre bridal blouse piece',
+      blousePiece: 'Heavy embroidered emerald green silk blouse piece',
+      weight: '990 grams',
+      origin: 'Amber Heritage Atelier, Rajasthan',
+      certification: 'Silk Mark Certified Luxury Collection'
     },
     careInstructions: [
-      'Dry Clean exclusively',
-      'Store flat wrapped in breathable muslin cloth',
-      'Avoid direct contact with perfume sprays'
+      'Strictly Dry Clean only',
+      'Store flat wrapped in acid-free tissue and muslin cloth',
+      'Do not machine press or wring'
     ],
     images: [
-      '/src/assets/images/product_bridal_magenta_gold_trousseau.jpg'
+      '/src/assets/images/product_bridal_emerald_zardozi.jpg'
     ],
-    rating: 4.9,
-    reviewCount: 35,
+    rating: 5.0,
+    reviewCount: 41,
     inStock: true,
     stockCount: 4,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-42',
+    name: 'Sunset Rust-Orange Peacock Zari Temple Bridal Saree',
+    slug: 'sunset-rust-orange-peacock-zari-temple-bridal-saree',
+    category: 'Bridal & Wedding',
+    fabric: 'Pure Heavy Weight Bridal Silk',
+    color: 'Sunset Rust Orange & Molten Gold',
+    occasion: 'Bridal & Wedding',
+    zariType: 'Handwoven Gold Zari Mayil Peacock & Temple Border',
+    price: 23500,
+    originalPrice: 28000,
+    discountPercent: 16,
+    description: 'Radiating warmth and sacred celebration, this sunset rust-orange bridal saree features handwoven pure gold zari peacock motifs across the body and a commanding ceremonial temple pallu.',
+    details: {
+      weave: 'Traditional Sacred Temple Jacquard Weave',
+      length: '5.5 metres + 0.9 metre bridal blouse piece',
+      blousePiece: 'Sunset orange pure silk blouse piece with peacock sleeve border',
+      weight: '940 grams',
+      origin: 'Deccan Temple Silk Atelier, Tamil Nadu',
+      certification: 'Silk Mark Certified Pure Silk'
+    },
+    careInstructions: [
+      'Dry Clean only',
+      'Store folded in cotton bags away from sunlight',
+      'Iron on reverse at low heat'
+    ],
+    images: [
+      '/src/assets/images/product_bridal_sunset_rust.jpg'
+    ],
+    rating: 4.9,
+    reviewCount: 34,
+    inStock: true,
+    stockCount: 5,
+    isBestSeller: false,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-43',
+    name: 'Royal Peacock Sapphire Blue Temple Bridal Silk Saree',
+    slug: 'royal-peacock-sapphire-blue-temple-bridal-silk-saree',
+    category: 'Bridal & Wedding',
+    fabric: 'Pure Heavy Mulberry Pattu Silk',
+    color: 'Sapphire Peacock Blue & Antique Gold',
+    occasion: 'Bridal & Wedding',
+    zariType: 'Pure Antique Gold Temple Motif & Paisley Pallu',
+    price: 25900,
+    originalPrice: 31000,
+    discountPercent: 16,
+    description: 'A majestic sapphire peacock blue bridal saree woven with shimmering antique gold butis, stately temple borders, and an opulent grand paisley pallu that commands admiration at the wedding reception.',
+    details: {
+      weave: 'Heritage Temple Jacquard Silk Weave',
+      length: '5.5 metres + 0.9 metre bridal blouse piece',
+      blousePiece: 'Sapphire blue pure silk unstitched blouse piece with gold border',
+      weight: '960 grams',
+      origin: 'Thanjavur Royal Weaving Atelier, Tamil Nadu',
+      certification: 'Silk Mark Certified Pure Silk'
+    },
+    careInstructions: [
+      'Strictly Dry Clean only',
+      'Wrap in unbleached cotton muslin',
+      'Avoid moisture and perfumes'
+    ],
+    images: [
+      '/src/assets/images/product_bridal_peacock_blue.jpg'
+    ],
+    rating: 5.0,
+    reviewCount: 44,
+    inStock: true,
+    stockCount: 4,
+    isBestSeller: true,
+    isFeatured: true,
+    isNewArrival: true
+  },
+  {
+    id: 'prod-44',
+    name: 'Sacred Ivory & Molten Gold Temple Muhurtham Bridal Saree',
+    slug: 'sacred-ivory-molten-gold-temple-muhurtham-bridal-saree',
+    category: 'Bridal & Wedding',
+    fabric: 'Pure Handwoven Mulberry Silk & Antique Zari',
+    color: 'Sacred Ivory White, Molten Gold & Temple Red',
+    occasion: 'Bridal & Wedding',
+    zariType: '12-Inch Heavy Temple Red & Solid Gold Zari Border',
+    price: 31500,
+    originalPrice: 37500,
+    discountPercent: 16,
+    description: 'The quintessential South Indian muhurtham saree in pure sacred ivory-white silk, framed by a glorious 12-inch temple crimson red and solid gold zari border, designed for the sacred vows and talambralu ceremony.',
+    details: {
+      weave: 'Sacred Muhurtham Heirloom Weave',
+      length: '5.5 metres + 0.9 metre bridal blouse piece',
+      blousePiece: 'Contrasting crimson silk blouse piece with heavy temple sleeve border',
+      weight: '1080 grams',
+      origin: 'Coimbatore Temple Silk Atelier, Tamil Nadu',
+      certification: 'Silk Mark & Handloom Certified Heirloom'
+    },
+    careInstructions: [
+      'Strictly Dry Clean only',
+      'Store flat wrapped in breathable muslin cloth',
+      'Do not expose to direct perfumes or moisture'
+    ],
+    images: [
+      '/src/assets/images/product_bridal_ivory_gold.jpg'
+    ],
+    rating: 5.0,
+    reviewCount: 58,
+    inStock: true,
+    stockCount: 3,
     isBestSeller: true,
     isFeatured: true,
     isNewArrival: true
