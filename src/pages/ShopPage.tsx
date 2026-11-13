@@ -119,7 +119,7 @@ export const ShopPage: React.FC<ShopPageProps> = ({ initialCategory, onSelectPro
   const [selectedFabric, setSelectedFabric] = useState<string>('all');
   const [selectedOccasion, setSelectedOccasion] = useState<string>('all');
   const [selectedColor, setSelectedColor] = useState<string>('all');
-  const [maxPrice, setMaxPrice] = useState<number>(20000);
+  const [maxPrice, setMaxPrice] = useState<number>(50000);
   const [inStockOnly, setInStockOnly] = useState<boolean>(false);
   const [sortBy, setSortBy] = useState<string>('featured');
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -203,7 +203,7 @@ export const ShopPage: React.FC<ShopPageProps> = ({ initialCategory, onSelectPro
     setSelectedFabric('all');
     setSelectedOccasion('all');
     setSelectedColor('all');
-    setMaxPrice(20000);
+    setMaxPrice(50000);
     setInStockOnly(false);
     setSearchQuery('');
     setSortBy('featured');
@@ -214,7 +214,7 @@ export const ShopPage: React.FC<ShopPageProps> = ({ initialCategory, onSelectPro
     selectedFabric !== 'all' ||
     selectedOccasion !== 'all' ||
     selectedColor !== 'all' ||
-    maxPrice < 20000 ||
+    maxPrice < 50000 ||
     inStockOnly ||
     searchQuery.trim() !== '';
 
@@ -379,7 +379,7 @@ export const ShopPage: React.FC<ShopPageProps> = ({ initialCategory, onSelectPro
             <input
               type="range"
               min="2000"
-              max="20000"
+              max="50000"
               step="500"
               value={maxPrice}
               onChange={(e) => setMaxPrice(Number(e.target.value))}
@@ -387,7 +387,7 @@ export const ShopPage: React.FC<ShopPageProps> = ({ initialCategory, onSelectPro
             />
             <div className="flex justify-between text-[10px] text-[#845377]">
               <span>₹2,000</span>
-              <span>₹20,000+</span>
+              <span>₹50,000+</span>
             </div>
           </div>
 
@@ -543,7 +543,7 @@ export const ShopPage: React.FC<ShopPageProps> = ({ initialCategory, onSelectPro
                 <input
                   type="range"
                   min="2000"
-                  max="20000"
+                  max="50000"
                   step="500"
                   value={maxPrice}
                   onChange={(e) => setMaxPrice(Number(e.target.value))}
